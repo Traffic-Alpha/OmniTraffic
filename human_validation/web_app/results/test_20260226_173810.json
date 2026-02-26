@@ -1,0 +1,3675 @@
+{
+  "username": "test",
+  "timestamp": "2026-02-26 17:38:10",
+  "total_questions": 100,
+  "correct_count": 97,
+  "accuracy": 0.97,
+  "total_time_seconds": 2520.3,
+  "by_category": {
+    "Comprehensive Analysis": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Road Infrastructure": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 1.0
+    },
+    "Scene Understanding": {
+      "total": 11,
+      "correct": 11,
+      "accuracy": 1.0
+    },
+    "Special Events": {
+      "total": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "Special Vehicles": {
+      "total": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "Temporal Reasoning": {
+      "total": 17,
+      "correct": 17,
+      "accuracy": 1.0
+    },
+    "Traffic Phase Analysis": {
+      "total": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "Vehicle Analysis": {
+      "total": 24,
+      "correct": 22,
+      "accuracy": 0.917
+    }
+  },
+  "by_task": {
+    "Cross-Timestep Multi Image": {
+      "total": 25,
+      "correct": 25,
+      "accuracy": 1.0
+    },
+    "Multi Image": {
+      "total": 17,
+      "correct": 16,
+      "accuracy": 0.941
+    },
+    "Single Image": {
+      "total": 58,
+      "correct": 56,
+      "accuracy": 0.966
+    }
+  },
+  "by_subtask": {
+    "Accident Detection": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "BEV to View Matching": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "Counting": {
+      "total": 36,
+      "correct": 34,
+      "accuracy": 0.944
+    },
+    "Decision Making": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Existence": {
+      "total": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "Localization": {
+      "total": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "Recognition": {
+      "total": 11,
+      "correct": 11,
+      "accuracy": 1.0
+    },
+    "Signal State Recognition": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "Special Vehicle Detection": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "Temporal Interval": {
+      "total": 7,
+      "correct": 7,
+      "accuracy": 1.0
+    },
+    "Temporal Order": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "Temporal Prediction": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "Vehicle Counting": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "View to BEV Matching": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    }
+  },
+  "by_capability": {
+    "Anomaly Detection": {
+      "total": 12,
+      "correct": 12,
+      "accuracy": 1.0
+    },
+    "BEV Matching": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "BEV Understanding": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "Cross-Image Analysis": {
+      "total": 12,
+      "correct": 12,
+      "accuracy": 1.0
+    },
+    "Cross-Image Comparison": {
+      "total": 6,
+      "correct": 6,
+      "accuracy": 1.0
+    },
+    "Cross-Timestep Analysis": {
+      "total": 23,
+      "correct": 23,
+      "accuracy": 1.0
+    },
+    "Distance Estimation": {
+      "total": 32,
+      "correct": 30,
+      "accuracy": 0.938
+    },
+    "Event Classification": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "Impact Assessment": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "Interval Understanding": {
+      "total": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "Lane Detection": {
+      "total": 35,
+      "correct": 34,
+      "accuracy": 0.971
+    },
+    "Motion Extrapolation": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "Multi-Directional Reasoning": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Object Detection": {
+      "total": 56,
+      "correct": 53,
+      "accuracy": 0.946
+    },
+    "Phase Understanding": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "Predictive Understanding": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "Priority Assessment": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Quantitative Analysis": {
+      "total": 7,
+      "correct": 7,
+      "accuracy": 1.0
+    },
+    "Scene Understanding": {
+      "total": 11,
+      "correct": 11,
+      "accuracy": 1.0
+    },
+    "Sequential Understanding": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "Spatial Reasoning": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "Spatial Understanding": {
+      "total": 39,
+      "correct": 38,
+      "accuracy": 0.974
+    },
+    "Temporal Reasoning": {
+      "total": 17,
+      "correct": 17,
+      "accuracy": 1.0
+    },
+    "Traffic Flow Analysis": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Traffic Signal Control": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "Traffic Signal Recognition": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "Vehicle Classification": {
+      "total": 19,
+      "correct": 18,
+      "accuracy": 0.947
+    },
+    "View Matching": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "View Understanding": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "Visibility Assessment": {
+      "total": 6,
+      "correct": 5,
+      "accuracy": 0.833
+    }
+  },
+  "details": [
+    {
+      "question_idx": 0,
+      "position": 0,
+      "question": "How many vehicles are there in total on the incoming and outgoing lanes, considering visibility?",
+      "options": {
+        "A": "1-5",
+        "B": "8-12",
+        "C": "6-7",
+        "D": "13-17"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 137.34,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Visibility Assessment"
+      ],
+      "explanation": "Camera detects 6 vehicles total. incoming road: 4 clear vehicles nearby, 0 somewhat visible vehicles further out. Vehicles exiting the intersection are not counted outgoing road: 2 clear vehicles nearby, 0 somewhat visible vehicles further out. Note: Distant vehicles may be less accurate due to limited visibility.",
+      "image_path": "images/qa_dataset/Beijing_Beihuan/478/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 1,
+      "position": 1,
+      "question": "How many vehicles are there in total on the incoming and outgoing lanes, considering visibility?",
+      "options": {
+        "A": "5-8",
+        "B": "14-18",
+        "C": "9-13",
+        "D": "0-4"
+      },
+      "user_answer": "C",
+      "correct_answer": "A",
+      "is_correct": false,
+      "time_spent": 13.96,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Visibility Assessment"
+      ],
+      "explanation": "Camera detects 7 vehicles total. incoming road: 3 clear vehicles nearby, 2 somewhat visible vehicles further out, and approximately 1 faint vehicles in the distance. Vehicles exiting the intersection are not counted outgoing road: 0 clear vehicles nearby, 0 somewhat visible vehicles further out, and approximately 1 faint vehicles in the distance. Note: Distant vehicles may be less accurate due to limited visibility.",
+      "image_path": "images/qa_dataset/Chengdu_Chenghannanlu/273/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 2,
+      "position": 2,
+      "question": "How many vehicles are there in total on the incoming and outgoing lanes, considering visibility?",
+      "options": {
+        "A": "19-23",
+        "B": "9-13",
+        "C": "14-18",
+        "D": "1-8"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 10.28,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Visibility Assessment"
+      ],
+      "explanation": "Camera detects 6 vehicles total. incoming road: 2 clear vehicles nearby, 1 somewhat visible vehicles further out, and approximately 3 faint vehicles in the distance. Note: The vehicles are leaving the incoming lanes due to green light. Vehicles that have left the lane markings are not counted. Note: Distant vehicles may be less accurate due to limited visibility.",
+      "image_path": "images/qa_dataset/Chengdu_Guanghua/487/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 3,
+      "position": 3,
+      "question": "How many vehicles are there in total on the incoming and outgoing lanes, considering visibility?",
+      "options": {
+        "A": "5-9",
+        "B": "13-17",
+        "C": "18-22",
+        "D": "10-12"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 6.69,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Visibility Assessment"
+      ],
+      "explanation": "Camera detects 11 vehicles total. incoming road: 7 clear vehicles nearby, 2 somewhat visible vehicles further out. Vehicles exiting the intersection are not counted outgoing road: 1 clear vehicles nearby, 0 somewhat visible vehicles further out, and approximately 1 faint vehicles in the distance. Note: Distant vehicles may be less accurate due to limited visibility.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/144/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 4,
+      "position": 4,
+      "question": "Does the image contain any emergency vehicles such as police cars, ambulances, or fire trucks?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 5.28,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation"
+      ],
+      "explanation": "No, there are no emergency vehicles in the image.",
+      "image_path": "images/qa_dataset/France_Massy_perturbation_crashed/528/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 5,
+      "position": 5,
+      "question": "Does the image contain any emergency vehicles such as police cars, ambulances, or fire trucks?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.95,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation"
+      ],
+      "explanation": "No, there are no emergency vehicles in the image.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/185/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 6,
+      "position": 6,
+      "question": "Does the image contain any emergency vehicles such as police cars, ambulances, or fire trucks?",
+      "options": {
+        "A": "No",
+        "B": "Yes"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 3.78,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation"
+      ],
+      "explanation": "No, there are no emergency vehicles in the image.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/229/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 7,
+      "position": 7,
+      "question": "What type of emergency vehicle is shown in the image, and where is it located?",
+      "options": {
+        "A": "Fire truck",
+        "B": "Police car",
+        "C": "Ambulance",
+        "D": "None"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 3.84,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Spatial Understanding"
+      ],
+      "explanation": "The image shows a fire truck approaching the intersection (41.5m away).",
+      "image_path": "images/qa_dataset/Beijing_Yongrunlu/413/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 8,
+      "position": 8,
+      "question": "What type of emergency vehicle is shown in the image, and where is it located?",
+      "options": {
+        "A": "None",
+        "B": "Fire truck",
+        "C": "Ambulance",
+        "D": "Police car"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 10.3,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Spatial Understanding"
+      ],
+      "explanation": "The image shows multiple emergency vehicles: 2 fire trucks.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/411/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 9,
+      "position": 9,
+      "question": "What type of emergency vehicle is shown in the image, and where is it located?",
+      "options": {
+        "A": "None",
+        "B": "Fire truck",
+        "C": "Police car",
+        "D": "Ambulance"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 4.39,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Spatial Understanding"
+      ],
+      "explanation": "The image shows a ambulance approaching the intersection (48.5m away).",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/262/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 10,
+      "position": 10,
+      "question": "Is there any traffic accident or obstruction visible in the image?",
+      "options": {
+        "A": "No",
+        "B": "Yes"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 4.21,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding"
+      ],
+      "explanation": "Yes, there are traffic accidents or obstructions visible in the image.",
+      "image_path": "images/qa_dataset/Chengdu_Guanghua/301/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 11,
+      "position": 11,
+      "question": "Is there any traffic accident or obstruction visible in the image?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 52.17,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding"
+      ],
+      "explanation": "Yes, there are traffic accidents or obstructions visible in the image.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/229/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 12,
+      "position": 12,
+      "question": "Is there any traffic accident or obstruction visible in the image?",
+      "options": {
+        "A": "No",
+        "B": "Yes"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 5.5,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding"
+      ],
+      "explanation": "Yes, there are traffic accidents or obstructions visible in the image.",
+      "image_path": "images/qa_dataset/France_Massy_perturbation_crashed/149/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 13,
+      "position": 13,
+      "question": "What types of traffic accidents or obstructions are visible in the image?",
+      "options": {
+        "A": "Vehicle collision",
+        "B": "Safety barrier",
+        "C": "Fallen tree",
+        "D": "None"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 4.39,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding",
+        "Event Classification"
+      ],
+      "explanation": "There is a multi-vehicle collision due to major traffic accident involving multiple cars. The road cannot be passed because wreckage and emergency operations block all affected lanes.",
+      "image_path": "images/qa_dataset/Beijing_Yongrunlu/379/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 14,
+      "position": 14,
+      "question": "What types of traffic accidents or obstructions are visible in the image?",
+      "options": {
+        "A": "Safety barrier",
+        "B": "Fallen tree",
+        "C": "None",
+        "D": "Vehicle collision"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.86,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding",
+        "Event Classification"
+      ],
+      "explanation": "There is a multiple fallen tree branches due to extreme weather event causing widespread damage. The road cannot be passed because extensive debris blocks multiple lanes completely.",
+      "image_path": "images/qa_dataset/Beijing_Beihuan/294/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 15,
+      "position": 15,
+      "question": "What types of traffic accidents or obstructions are visible in the image?",
+      "options": {
+        "A": "Safety barrier",
+        "B": "Fallen tree",
+        "C": "None",
+        "D": "Vehicle collision and Safety barrier"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 55.1,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Scene Understanding",
+        "Event Classification"
+      ],
+      "explanation": "There are multiple types of obstructions preventing passage: (1) vehicle collision caused by traffic accident involving one or more vehicles - damaged vehicles and emergency response block the lane; (2) safety barrier caused by temporary road closure for maintenance or event - the area is blocked off for safety reasons.",
+      "image_path": "images/qa_dataset/Beijing_Pinganli/376/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 16,
+      "position": 16,
+      "question": "How many incoming lanes are there in total?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "7",
+        "D": "5"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 5.25,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 5 incoming lanes.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/348/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 17,
+      "position": 17,
+      "question": "How many incoming lanes are there in total?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "1",
+        "D": "2"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.54,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 3 incoming lanes.",
+      "image_path": "images/qa_dataset/Beijing_Beishahe/476/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 18,
+      "position": 18,
+      "question": "How many incoming lanes are there in total?",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "3",
+        "D": "4"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 3.73,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 2 incoming lanes.",
+      "image_path": "images/qa_dataset/France_Massy_perturbation_crashed/491/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 19,
+      "position": 19,
+      "question": "How many outgoing lanes are there in total?",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "6",
+        "D": "3"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 4.2,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 3 outgoing lanes.",
+      "image_path": "images/qa_dataset/Beijing_Pinganli/287/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 20,
+      "position": 20,
+      "question": "How many outgoing lanes are there in total?",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "6",
+        "D": "3"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 6.37,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 3 outgoing lanes.",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/493/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 21,
+      "position": 21,
+      "question": "How many outgoing lanes are there in total?",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "6",
+        "D": "4"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 4.35,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are a total of 4 outgoing lanes.",
+      "image_path": "images/qa_dataset/Beijing_Yongrunlu/206/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 22,
+      "position": 22,
+      "question": "How many driving lanes are there in the incoming direction?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "4",
+        "D": "3"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 41.52,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There are 5 driving lanes.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/324/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 23,
+      "position": 23,
+      "question": "How many straight lanes are there in the incoming direction?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 5.07,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "There is 2 straight lane.",
+      "image_path": "images/qa_dataset/Beijing_Pinganli/214/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 24,
+      "position": 24,
+      "question": "In the incoming direction, what traffic movement is the first lane from the left designated for?",
+      "options": {
+        "A": "Straight",
+        "B": "Left-turn",
+        "C": "Right-turn",
+        "D": "Turn-around"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 63.0,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Right-turn traffic movement.",
+      "image_path": "images/qa_dataset/Beijing_Pinganli/557/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 25,
+      "position": 25,
+      "question": "In the incoming direction, what traffic movement is the first lane from the left designated for?",
+      "options": {
+        "A": "Straight",
+        "B": "Left-turn",
+        "C": "Right-turn",
+        "D": "Turn-around"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 13.83,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Right-turn traffic movement.",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/171/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 26,
+      "position": 26,
+      "question": "How many vehicles are there in the incoming direction, considering visibility?",
+      "options": {
+        "A": "8-12",
+        "B": "3-7",
+        "C": "13-17",
+        "D": "0-2"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 7.6,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "No vehicles detected on incoming lanes.",
+      "image_path": "images/qa_dataset/Beijing_Beishahe/214/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 27,
+      "position": 27,
+      "question": "How many vehicles are there in the incoming direction, considering visibility?",
+      "options": {
+        "A": "1-2",
+        "B": "13-17",
+        "C": "8-12",
+        "D": "3-7"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 4.09,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 1 vehicles across 2 incoming lanes. Lane 1 (from left to right): 1 faint vehicles; Lane 2 (from left to right): empty. Note: (1) Vehicles exiting the intersection are not counted; (2) Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Beijing_Beihuan/375/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 28,
+      "position": 28,
+      "question": "How many vehicles are there in the incoming direction, considering visibility?",
+      "options": {
+        "A": "12-16",
+        "B": "5-9",
+        "C": "17-21",
+        "D": "10-11"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 7.98,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 10 vehicles across 3 incoming lanes. Lane 1 (from left to right): 1 clear+1 faint vehicles; Lane 2 (from left to right): 3 clear+1 faint vehicles; Lane 3 (from left to right): 3 clear+1 faint vehicles. Note: (1) Vehicles exiting the intersection are not counted; (2) Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Beijing_Changjianglu/530/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 29,
+      "position": 29,
+      "question": "How many vehicles are there in the incoming direction, considering visibility?",
+      "options": {
+        "A": "17-21",
+        "B": "22-26",
+        "C": "12-16",
+        "D": "7-11"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 7.92,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 15 vehicles across 6 incoming lanes. Lane 1 (from left to right): empty; Lane 2 (from left to right): empty; Lane 3 (from left to right): 4 clear vehicles; Lane 4 (from left to right): 3 clear+~1 very faint vehicles; Lane 5 (from left to right): 4 clear+1 faint+~1 very faint vehicles; Lane 6 (from left to right): ~1 very faint vehicles. Note: (1) Vehicles exiting the intersection are not counted; (2) Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/106/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 30,
+      "position": 30,
+      "question": "How many vehicles are there in the incoming direction, considering visibility?",
+      "options": {
+        "A": "3-7",
+        "B": "13-17",
+        "C": "1-2",
+        "D": "8-12"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 3.7,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 1 vehicles across 2 incoming lanes. Lane 1 (from left to right): empty; Lane 2 (from left to right): 1 faint vehicles. Note: (1) Vehicles exiting the intersection are not counted; (2) Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/France_Massy_perturbation_crashed/259/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 31,
+      "position": 31,
+      "question": "How many vehicles are there in the outgoing direction, considering visibility?",
+      "options": {
+        "A": "14-18",
+        "B": "0-3",
+        "C": "9-13",
+        "D": "4-8"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 4.19,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 2 vehicles across 3 outgoing lanes. Lane 1 (from right to left): 1 clear+1 faint vehicles; Lane 2 (from right to left): empty; Lane 3 (from right to left): empty. Note: Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Beijing_Beishahe/298/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 32,
+      "position": 32,
+      "question": "How many vehicles are there in the outgoing direction, considering visibility?",
+      "options": {
+        "A": "3-7",
+        "B": "8-12",
+        "C": "1-2",
+        "D": "13-17"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 4.84,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 1 vehicles across 3 outgoing lanes. Lane 1 (from right to left): empty; Lane 2 (from right to left): empty; Lane 3 (from right to left): 1 clear vehicles. Note: Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Tianjin_zhijingdao/524/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 33,
+      "position": 33,
+      "question": "How many vehicles are there in the outgoing direction, considering visibility?",
+      "options": {
+        "A": "12-16",
+        "B": "0-1",
+        "C": "7-11",
+        "D": "2-6"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.65,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "No vehicles detected on outgoing lanes.",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/331/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 34,
+      "position": 34,
+      "question": "How many vehicles are there in the outgoing direction, considering visibility?",
+      "options": {
+        "A": "9-13",
+        "B": "14-18",
+        "C": "1-3",
+        "D": "4-8"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 4.1,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 2 vehicles across 4 outgoing lanes. Lane 1 (from right to left): empty; Lane 2 (from right to left): empty; Lane 3 (from right to left): empty; Lane 4 (from right to left): ~2 very faint vehicles. Note: Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Beijing_Pinganli/478/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 35,
+      "position": 35,
+      "question": "How many vehicles are there in the outgoing direction, considering visibility?",
+      "options": {
+        "A": "8-12",
+        "B": "1-2",
+        "C": "3-7",
+        "D": "13-17"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 4.0,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Total 1 vehicles across 3 outgoing lanes. Lane 1 (from right to left): 1 faint vehicles; Lane 2 (from right to left): empty; Lane 3 (from right to left): empty. Note: Distant vehicles may be less accurate.",
+      "image_path": "images/qa_dataset/Beijing_Beishahe/428/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 36,
+      "position": 36,
+      "question": "How many vehicles are there in incoming lane 2 (from left to right, starting from 1), considering visibility?",
+      "options": {
+        "A": "2-4",
+        "B": "8-10",
+        "C": "5-7",
+        "D": "0-1"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 5.76,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Incoming lane 2 (from left to right, starting from 1) is empty with no vehicles detected.",
+      "image_path": "images/qa_dataset/Tianjin_zhijingdao/371/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 37,
+      "position": 37,
+      "question": "How many vehicles are there in incoming lane 4 (from left to right, starting from 1), considering visibility?",
+      "options": {
+        "A": "0-2",
+        "B": "9-11",
+        "C": "3-5",
+        "D": "6-8"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 3.77,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Incoming lane 4 (from left to right) has 1 vehicles total: approximately 1 faint vehicles in the distance. Note: The vehicles are leaving the lane due to green light. Vehicles that have left the lane markings are not counted.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/450/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 38,
+      "position": 38,
+      "question": "How many vehicles are there in incoming lane 1 (from left to right, starting from 1), considering visibility?",
+      "options": {
+        "A": "6-8",
+        "B": "3-5",
+        "C": "1-2",
+        "D": "9-11"
+      },
+      "user_answer": "A",
+      "correct_answer": "C",
+      "is_correct": false,
+      "time_spent": 4.99,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "Incoming lane 1 (from left to right) has 1 vehicles total: 1 clear vehicles nearby. Note: Vehicles exiting the intersection are not counted.",
+      "image_path": "images/qa_dataset/Beijing_Beihuan/464/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 39,
+      "position": 39,
+      "question": "Which lane are the emergency vehicles located in (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 1",
+        "B": "Lane 3",
+        "C": "Lane 2",
+        "D": "Lane 5"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 6.28,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "The ambulance is located in incoming lane 2 (from left to right), approximately 97.3m from the intersection.",
+      "image_path": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/367/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 40,
+      "position": 40,
+      "question": "Which lane are the emergency vehicles located in (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 1",
+        "B": "Lane 2",
+        "C": "None",
+        "D": "Lane 3"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 4.61,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "The ambulance is located in incoming lane 3 (from left to right), approximately 12.9m from the intersection.",
+      "image_path": "images/qa_dataset/Beijing_Changjianglu/332/0.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 41,
+      "position": 41,
+      "question": "Which lane are the emergency vehicles located in (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 3",
+        "B": "None",
+        "C": "Lane 2",
+        "D": "Lane 1"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 3.07,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Distance Estimation"
+      ],
+      "explanation": "The fire truck is located in incoming lane 1 (from left to right), approximately 44.2m from the intersection.",
+      "image_path": "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/140/2.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 42,
+      "position": 42,
+      "question": "Which lanes are affected by the traffic accident or obstruction (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 2, 3",
+        "B": "None",
+        "C": "Lane 1",
+        "D": "Lane 1, 2"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 6.93,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Impact Assessment"
+      ],
+      "explanation": "Incoming direction has 3 lanes in total. From left to right, lane 1 (blocked by multi-vehicle collision), lane 2 (blocked by multi-vehicle collision) are affected.",
+      "image_path": "images/qa_dataset/Beijing_Yongrunlu/204/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 43,
+      "position": 43,
+      "question": "Which lanes are affected by the traffic accident or obstruction (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 1, 2",
+        "B": "Lane 2, 3",
+        "C": "None",
+        "D": "Lane 1, 2, 3"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 2.79,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Impact Assessment"
+      ],
+      "explanation": "Incoming direction has 3 lanes in total. From left to right, lane 1 (blocked by multi-vehicle collision), lane 2 (blocked by multi-vehicle collision), lane 3 (blocked by multi-vehicle collision) are affected.",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/481/3.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 44,
+      "position": 44,
+      "question": "Which lanes are affected by the traffic accident or obstruction (from left to right, lane index starts from 1)?",
+      "options": {
+        "A": "Lane 1, 2, 3",
+        "B": "Lane 2",
+        "C": "Lane 3",
+        "D": "Lane 1, 2"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 6.69,
+      "category": "Special Events",
+      "task": "Single Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Lane Detection",
+        "Spatial Understanding",
+        "Impact Assessment"
+      ],
+      "explanation": "Incoming direction has 3 lanes in total. From left to right, lane 2 (blocked by multi-vehicle collision), lane 3 (blocked by multi-vehicle collision) are affected.",
+      "image_path": "images/qa_dataset/Beijing_Gaojiaoyuan/315/1.png",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 45,
+      "position": 45,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. Which direction has the most vehicles, only considering the vehicles in the incoming lanes? Please provide the image index.",
+      "options": {
+        "A": "Image Index 1",
+        "B": "Image Index 0",
+        "C": "Image Index 3",
+        "D": "Image Index 2"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 17.76,
+      "category": "Vehicle Analysis",
+      "task": "Multi Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Cross-Image Comparison",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Image index 3 has the most vehicles with 11 vehicles visible in the incoming lanes.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Guanghua/501/0.png",
+        "images/qa_dataset/Chengdu_Guanghua/501/1.png",
+        "images/qa_dataset/Chengdu_Guanghua/501/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/501/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 46,
+      "position": 46,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. Which direction has the most vehicles, only considering the vehicles in the incoming lanes? Please provide the image index.",
+      "options": {
+        "A": "Image Index 2",
+        "B": "Image Index 1",
+        "C": "Image Index 0"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 14.34,
+      "category": "Vehicle Analysis",
+      "task": "Multi Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Cross-Image Comparison",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Image index 0 has the most vehicles with 14 vehicles visible in the incoming lanes.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beishahe/459/0.png",
+        "images/qa_dataset/Beijing_Beishahe/459/1.png",
+        "images/qa_dataset/Beijing_Beishahe/459/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 47,
+      "position": 47,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. Which direction has the most vehicles, only considering the vehicles in the incoming lanes? Please provide the image index.",
+      "options": {
+        "A": "Image Index 2",
+        "B": "Image Index 0",
+        "C": "Image Index 1",
+        "D": "Image Index 3"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 7.81,
+      "category": "Vehicle Analysis",
+      "task": "Multi Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Distance Estimation",
+        "Cross-Image Comparison",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Image index 0 has the most vehicles with 10 vehicles visible in the incoming lanes.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/234/0.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/234/1.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/234/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/234/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 48,
+      "position": 48,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. In which image(s) are emergency vehicles (police cars, ambulances, or fire trucks) visible? Please provide the image index.",
+      "options": {
+        "A": "Image Index 1",
+        "B": "Image Index 0",
+        "C": "None",
+        "D": "Image Index 2"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 47.05,
+      "category": "Special Vehicles",
+      "task": "Multi Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Emergency vehicles are visible in image index 0 shows police car.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/France_Massy_perturbation_crashed/107/0.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/107/1.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/107/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 49,
+      "position": 49,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. In which image(s) are emergency vehicles (police cars, ambulances, or fire trucks) visible? Please provide the image index.",
+      "options": {
+        "A": "Image Index 2",
+        "B": "Image Index 0",
+        "C": "Image Index 1",
+        "D": "None"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 8.6,
+      "category": "Special Vehicles",
+      "task": "Multi Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Emergency vehicles are visible in image index 0 shows a fire truck.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/France_Massy_perturbation_crashed/338/0.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/338/1.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/338/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 50,
+      "position": 50,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. In which image(s) are emergency vehicles (police cars, ambulances, or fire trucks) visible? Please provide the image index.",
+      "options": {
+        "A": "Image Index 0",
+        "B": "Image Index 1",
+        "C": "Image Index 2",
+        "D": "Image Index 3"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 27.6,
+      "category": "Special Vehicles",
+      "task": "Multi Image",
+      "subtask": "Localization",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Distance Estimation",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Emergency vehicles are visible in image index 2 shows a ambulance.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Gaojiaoyuan/266/0.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/266/1.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/266/2.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/266/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 51,
+      "position": 51,
+      "question": "Given a BEV (bird's-eye view), the task is to determine the driving direction associated with the star-shaped marker. Please select the correct description from the options provided.",
+      "options": {
+        "A": "View from direction 0",
+        "B": "View from direction 1",
+        "C": "View from direction 2"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 8.51,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "BEV to View Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "BEV Understanding",
+        "View Matching"
+      ],
+      "explanation": "View from direction 2",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Guanghua/479/bev.png",
+        "images/qa_dataset/Chengdu_Guanghua/479/0.png",
+        "images/qa_dataset/Chengdu_Guanghua/479/1.png",
+        "images/qa_dataset/Chengdu_Guanghua/479/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Chengdu_Guanghua/479/0.png",
+        "images/qa_dataset/Chengdu_Guanghua/479/1.png",
+        "images/qa_dataset/Chengdu_Guanghua/479/2.png"
+      ],
+      "bev_image": "images/qa_dataset/Chengdu_Guanghua/479/bev_star.png",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 52,
+      "position": 52,
+      "question": "Given a BEV (bird's-eye view), the task is to determine the driving direction associated with the star-shaped marker. Please select the correct description from the options provided.",
+      "options": {
+        "A": "View from direction 0",
+        "B": "View from direction 1",
+        "C": "View from direction 2"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 123.9,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "BEV to View Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "BEV Understanding",
+        "View Matching"
+      ],
+      "explanation": "View from direction 0",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Changjianglu/366/bev.png",
+        "images/qa_dataset/Beijing_Changjianglu/366/0.png",
+        "images/qa_dataset/Beijing_Changjianglu/366/1.png",
+        "images/qa_dataset/Beijing_Changjianglu/366/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Changjianglu/366/0.png",
+        "images/qa_dataset/Beijing_Changjianglu/366/1.png",
+        "images/qa_dataset/Beijing_Changjianglu/366/2.png"
+      ],
+      "bev_image": "images/qa_dataset/Beijing_Changjianglu/366/bev_star.png",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 53,
+      "position": 53,
+      "question": "Given the BEV (bird's-eye view), which directional view does NOT correspond to this BEV?",
+      "options": {
+        "A": "View from direction 2",
+        "B": "View from direction 0",
+        "C": "View from direction 3",
+        "D": "View from direction 1"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 11.2,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "BEV to View Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "BEV Understanding",
+        "View Matching"
+      ],
+      "explanation": "View from direction 2",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/bev.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/55/2.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/0.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/3.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/1.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/55/2.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/0.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/3.png",
+        "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/1.png"
+      ],
+      "bev_image": "images/qa_dataset/Hongkong_YMT_increasing_demand_branch/164/bev.png",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 54,
+      "position": 54,
+      "question": "Given the BEV (bird's-eye view), which directional view does NOT correspond to this BEV?",
+      "options": {
+        "A": "View from direction 2",
+        "B": "View from direction 1",
+        "C": "View from direction 0",
+        "D": "View from direction 0"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 144.9,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "BEV to View Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "BEV Understanding",
+        "View Matching"
+      ],
+      "explanation": "View from direction 0",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu/356/bev.png",
+        "images/qa_dataset/Beijing_Yongrunlu/356/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/356/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu/528/0.png",
+        "images/qa_dataset/Beijing_Yongrunlu/356/0.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Yongrunlu/356/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/356/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu/528/0.png",
+        "images/qa_dataset/Beijing_Yongrunlu/356/0.png"
+      ],
+      "bev_image": "images/qa_dataset/Beijing_Yongrunlu/356/bev.png",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 55,
+      "position": 55,
+      "question": "Given the BEV (bird's-eye view), which directional view does NOT correspond to this BEV?",
+      "options": {
+        "A": "View from direction 1",
+        "B": "View from direction 3",
+        "C": "View from direction 3",
+        "D": "View from direction 0"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 80.92,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "BEV to View Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "BEV Understanding",
+        "View Matching"
+      ],
+      "explanation": "View from direction 3",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/1.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/325/3.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/3.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/0.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/1.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/325/3.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/3.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/0.png"
+      ],
+      "bev_image": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/173/bev.png",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 56,
+      "position": 56,
+      "question": "Given the directional view, which BEV (bird's-eye view) corresponds to this view?",
+      "options": {
+        "A": "BEV image 1",
+        "B": "BEV image 2",
+        "C": "BEV image 3",
+        "D": "BEV image 4"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 11.4,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "View to BEV Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "View Understanding",
+        "BEV Matching"
+      ],
+      "explanation": "BEV image 4",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Chenghannanlu/302/2.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/245/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/272/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/550/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/302/bev.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Chengdu_Chenghannanlu/245/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/272/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/550/bev.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/302/bev.png"
+      ],
+      "bev_image": "",
+      "view_image": "images/qa_dataset/Chengdu_Chenghannanlu/302/2.png",
+      "reference_images": []
+    },
+    {
+      "question_idx": 57,
+      "position": 57,
+      "question": "Given the directional view, which BEV (bird's-eye view) corresponds to this view?",
+      "options": {
+        "A": "BEV image 1",
+        "B": "BEV image 2",
+        "C": "BEV image 3",
+        "D": "BEV image 4"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 14.83,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "View to BEV Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "View Understanding",
+        "BEV Matching"
+      ],
+      "explanation": "BEV image 4",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Gaojiaoyuan/281/3.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/358/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/504/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/59/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/281/bev.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Gaojiaoyuan/358/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/504/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/59/bev.png",
+        "images/qa_dataset/Beijing_Gaojiaoyuan/281/bev.png"
+      ],
+      "bev_image": "",
+      "view_image": "images/qa_dataset/Beijing_Gaojiaoyuan/281/3.png",
+      "reference_images": []
+    },
+    {
+      "question_idx": 58,
+      "position": 58,
+      "question": "Given the directional view, which BEV (bird's-eye view) corresponds to this view?",
+      "options": {
+        "A": "BEV image 1",
+        "B": "BEV image 2",
+        "C": "BEV image 3",
+        "D": "BEV image 4"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 32.3,
+      "category": "Scene Understanding",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "View to BEV Matching",
+      "capabilities": [
+        "Spatial Reasoning",
+        "Cross-Timestep Analysis",
+        "View Understanding",
+        "BEV Matching"
+      ],
+      "explanation": "BEV image 2",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/365/0.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/206/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/365/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/325/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/15/bev.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/206/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/365/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/325/bev.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/15/bev.png"
+      ],
+      "bev_image": "",
+      "view_image": "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/365/0.png",
+      "reference_images": []
+    },
+    {
+      "question_idx": 59,
+      "position": 59,
+      "question": "Among these four images from the same viewpoint at different timesteps, which one occurred first?",
+      "options": {
+        "A": "Image from 401",
+        "B": "Image from 403",
+        "C": "Image from 399",
+        "D": "Image from 405"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 44.13,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Order",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Sequential Understanding"
+      ],
+      "explanation": "Image from 399",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Pinganli/401/2.png",
+        "images/qa_dataset/Beijing_Pinganli/403/2.png",
+        "images/qa_dataset/Beijing_Pinganli/399/2.png",
+        "images/qa_dataset/Beijing_Pinganli/405/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Pinganli/401/2.png",
+        "images/qa_dataset/Beijing_Pinganli/403/2.png",
+        "images/qa_dataset/Beijing_Pinganli/399/2.png",
+        "images/qa_dataset/Beijing_Pinganli/405/2.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 60,
+      "position": 60,
+      "question": "Among these four images from the same viewpoint at different timesteps, which one occurred first?",
+      "options": {
+        "A": "Image from 231",
+        "B": "Image from 235",
+        "C": "Image from 233",
+        "D": "Image from 237"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 16.94,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Order",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Sequential Understanding"
+      ],
+      "explanation": "Image from 231",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu/231/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/235/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/233/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/237/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Yongrunlu/231/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/235/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/233/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/237/2.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 61,
+      "position": 61,
+      "question": "Among these four images from the same viewpoint at different timesteps, which one occurred first?",
+      "options": {
+        "A": "Image from 501",
+        "B": "Image from 495",
+        "C": "Image from 497",
+        "D": "Image from 499"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 87.21,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Order",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Sequential Understanding"
+      ],
+      "explanation": "Image from 495",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/501/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/495/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/497/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/499/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/501/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/495/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/497/2.png",
+        "images/qa_dataset/SouthKorea_Songdo_perturbation_crashed/499/2.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 62,
+      "position": 62,
+      "question": "Given a sequence of 4 consecutive images, analyze the change in vehicle queue length. Please determine if it shows an increasing, decreasing, or stable trend.",
+      "options": {
+        "A": "Increasing",
+        "B": "Decreasing",
+        "C": "Stable"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 5.65,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Queue length is increasing",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Guanghua/421/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/424/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/427/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/430/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Chengdu_Guanghua/421/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/424/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/427/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/430/2.png"
+      ]
+    },
+    {
+      "question_idx": 63,
+      "position": 63,
+      "question": "Given a sequence of 4 consecutive images, analyze the change in vehicle queue length. Please determine if it shows an increasing, decreasing, or stable trend.",
+      "options": {
+        "A": "Increasing",
+        "B": "Decreasing",
+        "C": "Stable"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 4.2,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Queue length is decreasing",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Pinganli/416/0.png",
+        "images/qa_dataset/Beijing_Pinganli/419/0.png",
+        "images/qa_dataset/Beijing_Pinganli/421/0.png",
+        "images/qa_dataset/Beijing_Pinganli/422/0.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Pinganli/416/0.png",
+        "images/qa_dataset/Beijing_Pinganli/419/0.png",
+        "images/qa_dataset/Beijing_Pinganli/421/0.png",
+        "images/qa_dataset/Beijing_Pinganli/422/0.png"
+      ]
+    },
+    {
+      "question_idx": 64,
+      "position": 64,
+      "question": "Given two reference images from the start and end times, which of the following images occurred between these two time points?",
+      "options": {
+        "A": "Image from 165",
+        "B": "Image from 407",
+        "C": "Image from 441",
+        "D": "Image from 403"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 14.99,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 403",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beihuan/402/0.png",
+        "images/qa_dataset/Beijing_Beihuan/404/0.png",
+        "images/qa_dataset/Beijing_Beihuan/165/0.png",
+        "images/qa_dataset/Beijing_Beihuan/407/0.png",
+        "images/qa_dataset/Beijing_Beihuan/441/0.png",
+        "images/qa_dataset/Beijing_Beihuan/403/0.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Beihuan/165/0.png",
+        "images/qa_dataset/Beijing_Beihuan/407/0.png",
+        "images/qa_dataset/Beijing_Beihuan/441/0.png",
+        "images/qa_dataset/Beijing_Beihuan/403/0.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Beihuan/402/0.png",
+        "images/qa_dataset/Beijing_Beihuan/404/0.png"
+      ]
+    },
+    {
+      "question_idx": 65,
+      "position": 65,
+      "question": "Given two reference images from the start and end times, which of the following images occurred between these two time points?",
+      "options": {
+        "A": "Image from 55",
+        "B": "Image from 549",
+        "C": "Image from 367",
+        "D": "Image from 377"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 25.61,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 367",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu/366/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/368/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/55/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/549/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/367/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/377/2.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Yongrunlu/55/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/549/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/367/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/377/2.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Yongrunlu/366/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/368/2.png"
+      ]
+    },
+    {
+      "question_idx": 66,
+      "position": 66,
+      "question": "Given two reference images from the start and end times, which of the following images occurred between these two time points?",
+      "options": {
+        "A": "Image from 23",
+        "B": "Image from 567",
+        "C": "Image from 508",
+        "D": "Image from 514"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 34.07,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 508",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beishahe/507/1.png",
+        "images/qa_dataset/Beijing_Beishahe/509/1.png",
+        "images/qa_dataset/Beijing_Beishahe/23/1.png",
+        "images/qa_dataset/Beijing_Beishahe/567/1.png",
+        "images/qa_dataset/Beijing_Beishahe/508/1.png",
+        "images/qa_dataset/Beijing_Beishahe/514/1.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Beishahe/23/1.png",
+        "images/qa_dataset/Beijing_Beishahe/567/1.png",
+        "images/qa_dataset/Beijing_Beishahe/508/1.png",
+        "images/qa_dataset/Beijing_Beishahe/514/1.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Beishahe/507/1.png",
+        "images/qa_dataset/Beijing_Beishahe/509/1.png"
+      ]
+    },
+    {
+      "question_idx": 67,
+      "position": 67,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 1;\nPhase 2: All lanes of Image 0;\nPhase 3: All lanes of Image 3;\n\nWhich traffic phase has the most vehicles waiting? Please provide the phase number.",
+      "options": {
+        "A": "Phase 3",
+        "B": "None",
+        "C": "Phase 1",
+        "D": "Phase 0"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 9.13,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Vehicle Counting",
+      "capabilities": [
+        "Object Detection",
+        "Phase Understanding",
+        "Cross-Image Comparison",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Phase 1 has the most vehicles with 11 vehicles waiting.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu/315/0.png",
+        "images/qa_dataset/Beijing_Yongrunlu/315/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu/315/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/315/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 68,
+      "position": 68,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 1;\nPhase 2: All lanes of Image 0;\n\nWhich traffic phase has the most vehicles? Please provide the phase number.",
+      "options": {
+        "A": "None",
+        "B": "Phase 0",
+        "C": "Phase 2",
+        "D": "Phase 1"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 14.25,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Vehicle Counting",
+      "capabilities": [
+        "Object Detection",
+        "Phase Understanding",
+        "Cross-Image Comparison",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Phase 2 has the most vehicles with 3 vehicles.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beishahe/226/0.png",
+        "images/qa_dataset/Beijing_Beishahe/226/1.png",
+        "images/qa_dataset/Beijing_Beishahe/226/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 69,
+      "position": 69,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 0;\nPhase 1: All lanes of Image 2;\nPhase 2: All lanes of Image 1;\n\nWhich traffic phase is affected by traffic accidents or obstructions? Please provide the phase number.",
+      "options": {
+        "A": "Phase 2",
+        "B": "Phase 0",
+        "C": "Phase 1",
+        "D": "None"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 7.01,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Accident Detection",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Phase Understanding",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Phase 2 is affected by pedestrian incident.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Chenghannanlu/454/0.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/454/1.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/454/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 70,
+      "position": 70,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 0;\nPhase 2: All lanes of Image 1;\n\nWhich traffic phase is affected by traffic accidents or obstructions? Please provide the phase number.",
+      "options": {
+        "A": "Phase 1",
+        "B": "None",
+        "C": "Phase 2",
+        "D": "Phase 0"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 7.87,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Accident Detection",
+      "capabilities": [
+        "Object Detection",
+        "Anomaly Detection",
+        "Phase Understanding",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Phase 0 is affected by vehicle collision.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/France_Massy_perturbation_crashed/170/0.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/170/1.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/170/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 71,
+      "position": 71,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 3;\nPhase 1: All lanes of Image 2;\nPhase 2: All lanes of Image 1;\nPhase 3: All lanes of Image 0;\n\nWhich traffic phase contains emergency vehicles (police cars, ambulances, or fire trucks)? Please provide the phase number.",
+      "options": {
+        "A": "Phase 3",
+        "B": "Phase 0",
+        "C": "Phase 2",
+        "D": "Phase 1"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 9.47,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Special Vehicle Detection",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Phase Understanding",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Phase 0 contains a fire truck.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Guanghua/517/0.png",
+        "images/qa_dataset/Chengdu_Guanghua/517/1.png",
+        "images/qa_dataset/Chengdu_Guanghua/517/2.png",
+        "images/qa_dataset/Chengdu_Guanghua/517/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 72,
+      "position": 72,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 0;\nPhase 1: All lanes of Image 2;\nPhase 2: All lanes of Image 1;\n\nWhich traffic phase contains emergency vehicles (police cars, ambulances, or fire trucks)? Please provide the phase number.",
+      "options": {
+        "A": "Phase 1",
+        "B": "Phase 2",
+        "C": "Phase 0",
+        "D": "None"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 9.26,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Special Vehicle Detection",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Phase Understanding",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Phase 0 contains a ambulance.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Changjianglu/335/0.png",
+        "images/qa_dataset/Beijing_Changjianglu/335/1.png",
+        "images/qa_dataset/Beijing_Changjianglu/335/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 73,
+      "position": 73,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 1;\nPhase 2: All lanes of Image 0;\n\nWhich traffic phase currently has a green light? Please provide the phase number.",
+      "options": {
+        "A": "Phase 1",
+        "B": "Phase 0",
+        "C": "Phase 2"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 8.36,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Signal State Recognition",
+      "capabilities": [
+        "Traffic Signal Recognition",
+        "Phase Understanding",
+        "Scene Understanding"
+      ],
+      "explanation": "Phase 2 currently has a green light, allowing vehicles in this phase to proceed through the intersection.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beihuan/231/0.png",
+        "images/qa_dataset/Beijing_Beihuan/231/1.png",
+        "images/qa_dataset/Beijing_Beihuan/231/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 74,
+      "position": 74,
+      "question": "These images are captured by cameras at an intersection, each showing a different incoming direction. The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 1;\nPhase 2: All lanes of Image 0;\nPhase 3: All lanes of Image 3;\n\nWhich traffic phase currently has a green light? Please provide the phase number.",
+      "options": {
+        "A": "Phase 0",
+        "B": "Phase 2",
+        "C": "Phase 3",
+        "D": "Phase 1"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 14.86,
+      "category": "Traffic Phase Analysis",
+      "task": "Multi Image",
+      "subtask": "Signal State Recognition",
+      "capabilities": [
+        "Traffic Signal Recognition",
+        "Phase Understanding",
+        "Scene Understanding"
+      ],
+      "explanation": "Phase 0 currently has a green light, allowing vehicles in this phase to proceed through the intersection.",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu/458/0.png",
+        "images/qa_dataset/Beijing_Yongrunlu/458/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu/458/2.png",
+        "images/qa_dataset/Beijing_Yongrunlu/458/3.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 75,
+      "position": 75,
+      "question": "Based on the current traffic conditions shown in all direction images, what is the optimal traffic signal phase decision that can alleviate traffic congestion? The phase information is as follows:\nPhase 0: All lanes of Image 2;\nPhase 1: All lanes of Image 0;\nPhase 2: All lanes of Image 1;\n\nPlease provide the phase number.",
+      "options": {
+        "A": "Phase 1",
+        "B": "Phase 2",
+        "C": "Phase 0"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 29.21,
+      "category": "Comprehensive Analysis",
+      "task": "Multi Image",
+      "subtask": "Decision Making",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Traffic Flow Analysis",
+        "Priority Assessment",
+        "Multi-Directional Reasoning",
+        "Traffic Signal Control"
+      ],
+      "explanation": "The optimal decision is to switch to Phase 1. ",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/France_Massy_perturbation_crashed/120/0.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/120/1.png",
+        "images/qa_dataset/France_Massy_perturbation_crashed/120/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 76,
+      "position": 76,
+      "question": "Based on the current traffic conditions shown in all direction images, what is the optimal traffic signal phase decision? The phase information is as follows:\nPhase 0: All lanes of Image 0;\nPhase 1: All lanes of Image 2;\nPhase 2: All lanes of Image 1;\n\nPlease provide the phase number.",
+      "options": {
+        "A": "Phase 1",
+        "B": "Phase 0",
+        "C": "Phase 2"
+      },
+      "user_answer": "C",
+      "correct_answer": "A",
+      "is_correct": false,
+      "time_spent": 50.06,
+      "category": "Comprehensive Analysis",
+      "task": "Multi Image",
+      "subtask": "Decision Making",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification",
+        "Traffic Flow Analysis",
+        "Priority Assessment",
+        "Multi-Directional Reasoning",
+        "Traffic Signal Control"
+      ],
+      "explanation": "The optimal decision is to switch to Phase 1, which corresponds to image index 2 (granting green light to this direction). ",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Chengdu_Chenghannanlu/288/0.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/288/1.png",
+        "images/qa_dataset/Chengdu_Chenghannanlu/288/2.png"
+      ],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 77,
+      "position": 77,
+      "question": "Given two consecutive reference images from timesteps, which of the following images would occur next in the sequence?",
+      "options": {
+        "A": "Image from 204",
+        "B": "Image from 208",
+        "C": "Image from 205",
+        "D": "Image from 156"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 12.91,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Prediction",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 204",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/202/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/203/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/204/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/208/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/205/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/156/1.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/204/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/208/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/205/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/156/1.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/202/1.png",
+        "images/qa_dataset/France_Massy_easy_increasing_demand_none/203/1.png"
+      ]
+    },
+    {
+      "question_idx": 78,
+      "position": 78,
+      "question": "Given two consecutive reference images from timesteps, which of the following images would occur next in the sequence?",
+      "options": {
+        "A": "Image from 224",
+        "B": "Image from 179",
+        "C": "Image from 223",
+        "D": "Image from 227"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 7.2,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Prediction",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 223",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/221/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/222/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/224/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/179/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/223/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/227/1.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/224/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/179/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/223/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/227/1.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/221/1.png",
+        "images/qa_dataset/Beijing_Yongrunlu_easy_increasing_demand_none/222/1.png"
+      ]
+    },
+    {
+      "question_idx": 79,
+      "position": 79,
+      "question": "Given two consecutive reference images from timesteps, which of the following images would occur next in the sequence?",
+      "options": {
+        "A": "Image from 161",
+        "B": "Image from 138",
+        "C": "Image from 162",
+        "D": "Image from 159"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 3.22,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Prediction",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Cross-Timestep Analysis",
+        "Interval Understanding"
+      ],
+      "explanation": "Image from 159",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/157/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/158/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/161/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/138/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/162/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/159/0.png"
+      ],
+      "option_images": [
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/161/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/138/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/162/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/159/0.png"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/157/0.png",
+        "images/qa_dataset/Beijing_Beishahe_easy_increasing_demand_set1/158/0.png"
+      ]
+    },
+    {
+      "question_idx": 80,
+      "position": 80,
+      "question": "Does the image contain any autonomous vehicles?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 3.31,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification"
+      ],
+      "explanation": "Yes, the image contains special vehicles.",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/081236/frame_000630.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 81,
+      "position": 81,
+      "question": "Does the image contain any autonomous vehicles?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.36,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification"
+      ],
+      "explanation": "No, the image does not contain special vehicles.",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000570.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 82,
+      "position": 82,
+      "question": "What is the weather condition in the image?",
+      "options": {
+        "A": "Sunny",
+        "B": "Cloudy",
+        "C": "Rainy",
+        "D": "Snowy"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 3.88,
+      "category": "Scene Understanding",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Scene Understanding",
+        "Visibility Assessment"
+      ],
+      "explanation": "Based on the lighting and visibility in the image, the weather condition is Cloudy. The answer is B (Cloudy).",
+      "image_path": "images/qa_dataset_real/Korea_Real_VQA/suwon_11_01_04/frame_010000.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 83,
+      "position": 83,
+      "question": "Can you identify the type of vehicle closest to the intersection in the picture? (Choose one from bus, ambulance, autonomous vehicle and taxi; exactly one of these four types satisfy the question.)",
+      "options": {
+        "A": "Bus",
+        "B": "Ambulance",
+        "C": "Autonomous vehicle",
+        "D": "Taxi"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 6.48,
+      "category": "Special Vehicles",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Vehicle Classification"
+      ],
+      "explanation": "The image shows a bus closest to the intersection. It can be identified by its large rectangular body and passenger capacity design. The answer is A (Bus).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/082456/frame_000570.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 84,
+      "position": 84,
+      "question": "Among these four traffic scene images, which one shows snowy weather conditions?",
+      "options": {
+        "A": "Image from suwon_11_01_04",
+        "B": "Image from suwon_5a_01_01",
+        "C": "Image from suwon_19_03_01",
+        "D": "Image from suwon_86_06_01"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 11.28,
+      "category": "Scene Understanding",
+      "task": "Multi Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Scene Understanding",
+        "Visibility Assessment",
+        "Cross-Image Comparison",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Based on the lighting, visibility and weather characteristics, image from suwon_86_06_01 shows Snowy weather. The answer is D.",
+      "image_path": "",
+      "images": [],
+      "option_images": [
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_11_01_04/frame_017180.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_01_01/frame_015525.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_19_03_01/frame_010425.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_86_06_01/frame_017925.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 85,
+      "position": 85,
+      "question": "Looking at the intersection in the foreground of the image, how many driving lanes are available for social motor vehicles in the direction currently controlled by the traffic light? (Excluding non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas)",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 46.23,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Based on the specified criteria – the direction permitted by the green light, lanes available for social motor vehicles, and the exclusion of non-motorized vehicle lanes, bus-only lanes and parking lanes – there are four eligible driving lanes in total.",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/073939/frame_000300.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 86,
+      "position": 86,
+      "question": "Looking at the intersection in the foreground of the image, how many driving lanes are available for social motor vehicles in the direction currently controlled by the traffic light? (Excluding non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas)",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 5.45,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Based on the specified criteria – the direction permitted by the green light, lanes available for social motor vehicles, and the exclusion of non-motorized vehicle lanes, bus-only lanes and parking lanes – there are four eligible driving lanes in total.",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/081037/frame_000030.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 87,
+      "position": 87,
+      "question": "Looking at the intersection in the foreground of the image, how many incoming driving lanes are available for social motor vehicles in the direction facing the camera? (Excluding non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas)",
+      "options": {
+        "A": "0",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 12.39,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Based on the specified criteria – the incoming direction facing the camera, lanes available for social motor vehicles, and the exclusion of non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas – there are two eligible incoming driving lanes in total. The answer is C (2).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/083808/frame_000300.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 88,
+      "position": 88,
+      "question": "Looking at the intersection in the foreground of the image, how many outgoing driving lanes are available for social motor vehicles in the direction facing the camera? (Excluding non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas)",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "2",
+        "D": "3"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 3.07,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding"
+      ],
+      "explanation": "Based on the specified criteria – the outgoing direction facing the camera, lanes available for social motor vehicles, and the exclusion of non-motorized vehicle lanes, bus-only lanes, roadside parking lanes, and pedestrian crosswalk areas – there are two eligible outgoing driving lanes in total. The answer is C (2).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/085542/frame_000300.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 89,
+      "position": 89,
+      "question": "At the intersection, the traffic light head follows the standard vertical configuration (Red on top, Yellow in the middle, Green at the bottom). Based on which lamp is illuminated, what is the current color state of the traffic light for the direction facing the camera?",
+      "options": {
+        "A": "Red light",
+        "B": "Yellow light",
+        "C": "Green light",
+        "D": "No traffic light visible"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 7.47,
+      "category": "Traffic Phase Analysis",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Object Detection",
+        "Traffic Signal Recognition"
+      ],
+      "explanation": "The traffic light at the intersection shows a green light. This indicates traffic control for vehicles approaching the intersection. The answer is C (Green light).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/072709/frame_000300.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 90,
+      "position": 90,
+      "question": "At the foreground intersection in the image, within the main driving lanes directly in front of the camera, how many motor vehicles are stationary at the stop line/zebra crossing waiting for the red light? (Exclude vehicles driving through the intersection and those in parking lanes on both sides)",
+      "options": {
+        "A": "0-1",
+        "B": "2-3",
+        "C": "4-5",
+        "D": "6 or more"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 7.58,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Spatial Understanding",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Based on visual inspection of the main driving lanes at the foreground intersection, there are approximately 4 to 5 motor vehicles stationary at the stop line/zebra crossing waiting for the red light. Vehicles in parking lanes and those passing through are excluded. The answer is C (4-5).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/073152/frame_000510.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 91,
+      "position": 91,
+      "question": "At the foreground intersection in the image, within the main driving lanes directly in front of the camera, how many motor vehicles are stationary at the stop line/zebra crossing waiting for the red light? (Exclude vehicles driving through the intersection and those in parking lanes on both sides)",
+      "options": {
+        "A": "0-1",
+        "B": "2-3",
+        "C": "4-5",
+        "D": "6 or more"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 11.31,
+      "category": "Vehicle Analysis",
+      "task": "Single Image",
+      "subtask": "Counting",
+      "capabilities": [
+        "Object Detection",
+        "Spatial Understanding",
+        "Quantitative Analysis"
+      ],
+      "explanation": "Considering only the main driving lanes directly in front of the camera and excluding through-traffic and parking-lane vehicles, the number of stationary motor vehicles waiting at the stop line/zebra crossing falls in the range '6 or more'. The answer is D (6 or more).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/073451/frame_000660.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 92,
+      "position": 92,
+      "question": "In the incoming direction facing the camera, what traffic movement is the leftmost lane designated for?",
+      "options": {
+        "A": "Left turn only",
+        "B": "Left turn + Straight through",
+        "C": "Straight through only",
+        "D": "Straight through + Right turn"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 8.27,
+      "category": "Road Infrastructure",
+      "task": "Single Image",
+      "subtask": "Recognition",
+      "capabilities": [
+        "Lane Detection",
+        "Spatial Understanding",
+        "Scene Understanding"
+      ],
+      "explanation": "Based on the lane markings/signage for the specified lane, the correct designation is 'Straight through + Right turn'. The answer is D (Straight through + Right turn).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/073427/frame_000300.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 93,
+      "position": 93,
+      "question": "Given two reference images from the start and end times, which of the following images occurred between these two time points?",
+      "options": {
+        "A": "Image from 000690",
+        "B": "Image from 000330",
+        "C": "Image from 000630",
+        "D": "Image from 000150"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 9.05,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Interval Understanding",
+        "Cross-Timestep Analysis",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Image from 000630",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000600.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000660.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000690.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000330.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000630.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000150.jpg"
+      ],
+      "option_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000690.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000330.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000630.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000150.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000600.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/084129/frame_000660.jpg"
+      ]
+    },
+    {
+      "question_idx": 94,
+      "position": 94,
+      "question": "Given two reference images from the start and end times, which of the following images occurred between these two time points?",
+      "options": {
+        "A": "Image from 007920",
+        "B": "Image from 005775",
+        "C": "Image from 006885",
+        "D": "Image from 005625"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 5.8,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Interval",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Interval Understanding",
+        "Cross-Timestep Analysis",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Based on the temporal sequence, the image from 005775 occurred between 005700 and 005850. The answer is B.",
+      "image_path": "",
+      "images": [],
+      "option_images": [
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_007920.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_005775.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_006885.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_005625.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_005700.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_5a_06_01/frame_005850.jpg"
+      ]
+    },
+    {
+      "question_idx": 95,
+      "position": 95,
+      "question": "Given two consecutive temporal frame images, which of the provided images most accurately predicts the subsequent time step?",
+      "options": {
+        "A": "Image from 000510",
+        "B": "Image from 000480",
+        "C": "Image from 000240",
+        "D": "Image from 000120"
+      },
+      "user_answer": "C",
+      "correct_answer": "C",
+      "is_correct": true,
+      "time_spent": 11.7,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Prediction",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Predictive Understanding",
+        "Motion Extrapolation"
+      ],
+      "explanation": "Based on the temporal progression from 000180 to 000210, the next frame in the sequence is 000240 (Option C).",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000180.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000210.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000510.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000480.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000240.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000120.jpg"
+      ],
+      "option_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000510.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000480.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000240.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000120.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000180.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/085635/frame_000210.jpg"
+      ]
+    },
+    {
+      "question_idx": 96,
+      "position": 96,
+      "question": "Given two consecutive temporal frame images, which of the provided images most accurately predicts the subsequent time step?",
+      "options": {
+        "A": "Image from 006550",
+        "B": "Image from 010800",
+        "C": "Image from 006300",
+        "D": "Image from 007850"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 13.51,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Prediction",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Predictive Understanding",
+        "Motion Extrapolation"
+      ],
+      "explanation": "Based on the temporal progression from 006450 to 006500, the next frame in the sequence is 006550 (Option A).",
+      "image_path": "",
+      "images": [],
+      "option_images": [
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_006550.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_010800.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_006300.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_007850.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": [
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_006450.jpg",
+        "images/qa_dataset_real/Korea_Real_VQA/suwon_83_01_01/frame_006500.jpg"
+      ]
+    },
+    {
+      "question_idx": 97,
+      "position": 97,
+      "question": "Among these four images from the same viewpoint at different time points, which one occurred first?",
+      "options": {
+        "A": "Image from 000090",
+        "B": "Image from 000120",
+        "C": "Image from 000150",
+        "D": "Image from 000060"
+      },
+      "user_answer": "D",
+      "correct_answer": "D",
+      "is_correct": true,
+      "time_spent": 14.44,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Order",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Sequential Understanding",
+        "Cross-Timestep Analysis",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Image from 000060",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000090.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000120.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000150.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000060.jpg"
+      ],
+      "option_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000090.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000120.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000150.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/080220/frame_000060.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 98,
+      "position": 98,
+      "question": "Among these four images from the same viewpoint at different time points, which one occurred first?",
+      "options": {
+        "A": "Image from 000330",
+        "B": "Image from 000240",
+        "C": "Image from 000300",
+        "D": "Image from 000270"
+      },
+      "user_answer": "B",
+      "correct_answer": "B",
+      "is_correct": true,
+      "time_spent": 28.06,
+      "category": "Temporal Reasoning",
+      "task": "Cross-Timestep Multi Image",
+      "subtask": "Temporal Order",
+      "capabilities": [
+        "Temporal Reasoning",
+        "Sequential Understanding",
+        "Cross-Timestep Analysis",
+        "Cross-Image Analysis"
+      ],
+      "explanation": "Image from 000240",
+      "image_path": "",
+      "images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000330.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000240.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000300.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000270.jpg"
+      ],
+      "option_images": [
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000330.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000240.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000300.jpg",
+        "images/qa_dataset_real/Tianjin_Real_VQA/082034/frame_000270.jpg"
+      ],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    },
+    {
+      "question_idx": 99,
+      "position": 99,
+      "question": "Are there any pedestrians staying or walking in the motor vehicle lanes?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "user_answer": "A",
+      "correct_answer": "A",
+      "is_correct": true,
+      "time_spent": 6.28,
+      "category": "Scene Understanding",
+      "task": "Single Image",
+      "subtask": "Existence",
+      "capabilities": [
+        "Object Detection",
+        "Lane Detection",
+        "Anomaly Detection"
+      ],
+      "explanation": "Pedestrians in the motor vehicle lanes: Yes. The answer is A (Yes).",
+      "image_path": "images/qa_dataset_real/Tianjin_Real_VQA/082906/frame_000540.jpg",
+      "images": [],
+      "option_images": [],
+      "bev_image": "",
+      "view_image": "",
+      "reference_images": []
+    }
+  ]
+}
