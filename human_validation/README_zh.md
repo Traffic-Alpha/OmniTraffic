@@ -1,9 +1,17 @@
+<!--
+ * @Author: WANG Maonan, Zhengyan Huang
+ * @Date: 2026-02-26 15:54:22
+ * @Description: README
+ * @LastEditTime: 2026-02-26 16:23:05
+-->
 # OmniTraffic 人工验证
 
-这是 [OmniTraffic](https://github.com/your-repo/OmniTraffic) 项目中的人工验证部分——一个全面的交通场景视觉问答基准。我们从数据集中精心挑选了 **100 道题目**，涵盖**仿真环境**和**真实环境**，用于评估人类在交通场景理解任务上的表现。
+这是 [OmniTraffic](https://github.com/your-repo/OmniTraffic) 项目中的人工验证部分——一个全面的交通场景视觉问答基准。我们从数据集中精心挑选了 **100 道题目**，涵盖**仿真环境**和**真实环境**，用于评估人类在交通场景理解任务上的表现（[English Version](README.md)）。
 
-![测验界面](./docs/images/quiz_interface.png)
-*测验界面预览*
+<div align=center>
+   <img src="./assets/quiz_interface.png" width="70%" >
+</div>
+<p align="center">首页 - 输入用户名开始答题</p>
 
 ## 快速开始
 
@@ -13,7 +21,7 @@
 
 ```bash
 # 从 GitHub Release 下载
-# https://github.com/your-repo/OmniTraffic/releases
+# https://github.com/Traffic-Alpha/OmniTraffic/releases/tag/v1.0-human-validation
 
 # 解压数据到 data/images/
 unzip human_validation_data.zip -d OmniTraffic/human_validation/data/
@@ -51,6 +59,11 @@ Web 应用将在 `http://localhost:5000` 启动。
 3. 通过选择 A/B/C/D 选项回答全部 100 道题目
 4. 提交后查看分数和详细结果
 
+<div align=center>
+   <img src="./assets/question_page.png" width="70%" >
+</div>
+<p align="center">答题界面 - 样题展示</p>
+
 ### 4. 查看参考答案
 
 完成测试后可以：
@@ -58,8 +71,11 @@ Web 应用将在 `http://localhost:5000` 启动。
 - 核对每道题的正确答案
 - 将结果下载为 JSON 文件
 
-![结果页面](./docs/images/results_page.png)
-*结果页面预览*
+<div align=center>
+   <img src="./assets/results_page.png" width="70%" >
+</div>
+<p align="center">结果分析</p>
+
 
 ## 文件结构
 
@@ -91,8 +107,3 @@ human_validation/
 - 用户名和时间戳
 - 总题数和正确数
 - 按类别、任务、能力分类的准确率
-- 每道题的详细答案
-
----
-
-[English Version](README.md)

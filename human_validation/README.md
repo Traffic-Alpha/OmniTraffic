@@ -1,9 +1,17 @@
+<!--
+ * @Author: WANG Maonan, HUANG Zhengyan
+ * @Date: 2026-02-26 15:54:04
+ * @Description: README
+ * @LastEditTime: 2026-02-26 16:21:17
+-->
 # OmniTraffic Human Validation
 
-This is the **human validation** component of [OmniTraffic](https://github.com/your-repo/OmniTraffic), a comprehensive benchmark for traffic scene visual question answering. We have carefully selected **100 questions** from the dataset, covering both **synthetic (simulation)** and **real-world** environments, to evaluate human performance on traffic scene understanding tasks.
+This is the **human validation** component of [OmniTraffic](https://github.com/your-repo/OmniTraffic), a comprehensive benchmark for traffic scene visual question answering. We have carefully selected **100 questions** from the dataset, covering both **synthetic (simulation)** and **real-world** environments, to evaluate human performance on traffic scene understanding tasks ([中文版](README_zh.md)).
 
-![Quiz Interface](./docs/images/quiz_interface.png)
-*Quiz interface preview*
+<div align=center>
+   <img src="./assets/quiz_interface.png" width="70%" >
+</div>
+<p align="center">Home page - enter username to start</p>
 
 ## Quick Start
 
@@ -13,7 +21,7 @@ Download the image data from the GitHub Release and extract to the `data/images/
 
 ```bash
 # Download from GitHub Release
-# https://github.com/your-repo/OmniTraffic/releases
+# https://github.com/Traffic-Alpha/OmniTraffic/releases/tag/v1.0-human-validation
 
 # Extract the data to data/images/
 unzip human_validation_data.zip -d OmniTraffic/human_validation/data/
@@ -51,6 +59,11 @@ The web application will start at `http://localhost:5000`.
 3. Answer all 100 questions by selecting A/B/C/D options
 4. View your score and detailed results after submission
 
+<div align=center>
+   <img src="./assets/question_page.png" width="70%" >
+</div>
+<p align="center">Sample question with multiple choice options</p>
+
 ### 4. Review Answers
 
 After completing the test, you can:
@@ -58,8 +71,10 @@ After completing the test, you can:
 - Check each question with the correct answer
 - Download your results as JSON
 
-![Results Page](./docs/images/results_page.png)
-*Results page preview*
+<div align=center>
+   <img src="./assets/results_page.png" width="70%" >
+</div>
+<p align="center">esults analysis</p>
 
 ## File Structure
 
@@ -91,8 +106,3 @@ Each result file contains:
 - Username and timestamp
 - Total questions and correct count
 - Accuracy by category, task, and capability
-- Detailed answer for each question
-
----
-
-[中文版](README_zh.md)
