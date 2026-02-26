@@ -1,0 +1,37 @@
+<!--
+ * @Author: Zhengyan Huang, WANG Maonan
+ * @Date: 2026-02-26 15:15:29
+ * @Description: Base template for OmniTraffic VQA Test
+ * @LastEditTime: 2026-02-26 15:43:59
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}OmniTraffic VQA Test{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="nav-brand">🚦 OmniTraffic VQA Test</a>
+    <div class="nav-links">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('admin_results') }}">Records</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>OmniTraffic VQA Benchmark Test &copy; 2026</p>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+

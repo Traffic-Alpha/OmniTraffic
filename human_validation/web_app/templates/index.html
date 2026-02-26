@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}OmniTraffic VQA Test — Start{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <h1>Traffic Scene VQA Test</h1>
+  <p class="hero-subtitle">
+    Test your ability to understand traffic scenes through visual question answering.
+    This assessment contains <strong>{{ total_questions }}</strong> questions covering
+    vehicle detection, road topology, spatial reasoning, temporal analysis, and signal control decisions.
+  </p>
+
+  <div class="card start-card">
+    <form action="{{ url_for('start') }}" method="POST" class="start-form">
+      <label for="username">Enter your name to begin:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Your name"
+        required
+        autofocus
+        maxlength="50"
+        autocomplete="off"
+      />
+      <button type="submit" class="btn btn-primary btn-lg">Start Test</button>
+    </form>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-number">{{ total_questions }}</span>
+        <span class="info-label">Questions</span>
+      </div>
+      <div class="info-item">
+        <span class="info-number">8</span>
+        <span class="info-label">Categories</span>
+      </div>
+      <div class="info-item">
+        <span class="info-number">~30 min</span>
+        <span class="info-label">Est. Time</span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

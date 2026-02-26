@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% block title %}Question {{ q_pos + 1 }} / {{ total }}{% endblock %}
+
+{% block content %}
+<div class="quiz-layout">
+  <!-- Question Navigator Sidebar -->
+  <div class="question-navigator">
+    <h3>Questions</h3>
+    <div class="navigator-grid">
+      {% for status in answer_status %}
+      <div class="nav-item {% if status.answered %}answered{% endif %} {% if status.pos == q_pos %}current{% endif %}"
+           onclick="jumpToQuestion({{ status.pos }})">
+        {{ status.pos + 1 }}
+        {% if status.answered and status.selected %}
+          <span class="nav-answer">{{ status.selected }}</span>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="navigator-legend">
+      <div><span class="legend-box current"></span> Current</div>
+      <div><span class="legend-box answered"></span> Answered</div>
+      <div><span class="legend-box"></span> Unanswered</div>
+    </div>
+  </div>
+
+  <!-- Main Quiz Area -->
+  <div class="quiz-container">
+    <!-- Progress bar -->
+    <div class="progress-bar-wrapper">
+      <div class="progress-bar" style="width: {{ progress_pct }}%"></div>
+    </div>
+    <div class="progress-text">
+      Question <strong>{{ q_pos + 1 }}</strong> / {{ total }}
+      <span class="answered-count">({{ answer_status | selectattr('answered') | list | length }} answered)</span>
+      <span class="timer" id="timer">0:00</span>
+    </div>
+
+  <!-- Images -->
+  <div class="image-section">
+    {% if image_mode == "single" %}
+      <div class="image-single">
+        <img src="/{{ question.image_path }}" alt="Question image" class="quiz-img" onclick="openLightbox(this.src)">
+      </div>
+
+    {% elif image_mode == "multi" and not question.reference_images %}
+      {# Only show images here if there are no reference_images to avoid duplication #}
+      <div class="image-grid image-grid-{{ question.images | length }}">
+        {% for img_path in question.images %}
+        <div class="image-grid-item">
+          <span class="image-label">Image {{ loop.index0 }}</span>
+          <img src="/{{ img_path }}" alt="Image {{ loop.index0 }}" class="quiz-img" onclick="openLightbox(this.src)">
+        </div>
+        {% endfor %}
+      </div>
+
+    {% elif image_mode == "option_images" %}
+      {# option_images will be shown inline with options below - do not display here to avoid revealing timestep info #}
+    {% endif %}
+
+    {# BEV image (BEV-to-View matching tasks) #}
+    {% if question.bev_image %}
+    <div class="extra-image-section">
+      <span class="image-label">Bird's-Eye View (BEV)</span>
+      <div class="image-single">
+        <img src="/{{ question.bev_image }}" alt="BEV image" class="quiz-img" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+    {% endif %}
+
+    {# View image (View-to-BEV matching tasks) #}
+    {% if question.view_image %}
+    <div class="extra-image-section">
+      <span class="image-label">Directional View</span>
+      <div class="image-single">
+        <img src="/{{ question.view_image }}" alt="View image" class="quiz-img" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+    {% endif %}
+
+    {# Reference images (Temporal tasks) #}
+    {% if question.reference_images %}
+    <div class="extra-image-section">
+      <span class="image-label">Reference Images</span>
+      <div class="image-grid image-grid-{{ question.reference_images | length }}">
+        {% for img_path in question.reference_images %}
+        <div class="image-grid-item">
+          <span class="image-label">Ref {{ loop.index }}</span>
+          <img src="/{{ img_path }}" alt="Reference image {{ loop.index }}" class="quiz-img" onclick="openLightbox(this.src)">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Question text -->
+  <div class="question-text">
+    <p>{{ question.question | replace('\n', '<br>') | safe }}</p>
+  </div>
+
+  <!-- Options -->
+  <form action="{{ url_for('submit') }}" method="POST" id="quizForm">
+    <input type="hidden" name="q_pos" value="{{ q_pos }}">
+    <input type="hidden" name="q_idx" value="{{ q_idx }}">
+    <input type="hidden" name="selected" id="selectedInput" value="{{ current_answer }}">
+    <input type="hidden" name="action" id="actionInput" value="next">
+    <input type="hidden" name="target_pos" id="targetPosInput" value="">
+
+    <div class="options-list {% if question.option_images %}options-with-images{% endif %}">
+      {% if question.option_images %}
+        {# For temporal/visual comparison tasks - show images instead of text to prevent timestep cheating #}
+        {% for key, value in question.options.items() %}
+        {% set img_index = loop.index0 %}
+        <div class="option-item option-with-image {% if key == current_answer %}selected{% endif %}" data-key="{{ key }}" onclick="selectOption('{{ key }}')">
+          <span class="option-key">{{ key }}</span>
+          <div class="option-image-wrapper">
+            <img src="/{{ question.option_images[img_index] }}" alt="Option {{ key }}" class="option-img" onclick="event.stopPropagation(); openLightbox(this.src)">
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        {# Regular text options #}
+        {% for key, value in question.options.items() %}
+        <div class="option-item {% if key == current_answer %}selected{% endif %}" data-key="{{ key }}" onclick="selectOption('{{ key }}')">
+          <span class="option-key">{{ key }}</span>
+          <span class="option-text">{{ value }}</span>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <div class="quiz-actions">
+      <div class="action-row">
+        {% if q_pos > 0 %}
+        <button type="button" class="btn btn-secondary" onclick="goToPrev()">
+          ← Previous
+        </button>
+        {% endif %}
+
+        {% if q_pos + 1 < total %}
+        <button type="submit" class="btn btn-primary" id="nextBtn">
+          Next Question →
+        </button>
+        {% else %}
+        <button type="submit" class="btn btn-primary" id="nextBtn">
+          Save Answer
+        </button>
+        {% endif %}
+      </div>
+
+      {% if all_answered %}
+      <div class="action-row" style="margin-top: 1rem;">
+        <button type="button" class="btn btn-success btn-large" onclick="finishQuiz()">
+          ✓ Submit All Answers & View Results
+        </button>
+      </div>
+      {% else %}
+      <div class="action-row" style="margin-top: 1rem;">
+        <button type="button" class="btn btn-disabled btn-large" disabled title="Please answer all questions first">
+          Submit All Answers ({{ answer_status | selectattr('answered') | list | length }}/{{ total }} answered)
+        </button>
+      </div>
+      {% endif %}
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="Enlarged image">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script>
+  startTimer();
+
+  // Initialize selected option if returning to this question
+  const currentAnswer = "{{ current_answer }}";
+  if (currentAnswer) {
+    document.getElementById('selectedInput').value = currentAnswer;
+  }
+
+  function goToPrev() {
+    document.getElementById('actionInput').value = 'prev';
+    document.getElementById('quizForm').submit();
+  }
+
+  function jumpToQuestion(pos) {
+    document.getElementById('actionInput').value = 'jump';
+    document.getElementById('targetPosInput').value = pos;
+    document.getElementById('quizForm').submit();
+  }
+
+  function finishQuiz() {
+    if (confirm('Submit all answers and view results?')) {
+      document.getElementById('actionInput').value = 'finish';
+      document.getElementById('quizForm').submit();
+    }
+  }
+
+  // Override the default form submission to set action
+  document.getElementById('quizForm').addEventListener('submit', function(e) {
+    const action = document.getElementById('actionInput').value;
+    if (action === 'finish') {
+      // Already handled by finishQuiz()
+      return;
+    }
+    // For normal next/save, ensure action is set
+    if (!action || action === '') {
+      document.getElementById('actionInput').value = 'next';
+    }
+  });
+</script>
+{% endblock %}
+

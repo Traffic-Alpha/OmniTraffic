@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% block title %}Results — {{ r.username }}{% endblock %}
+
+{% block content %}
+<div class="result-container">
+  <!-- Header -->
+  <div class="result-header">
+    <h1>Test Results</h1>
+    <div class="result-meta">
+      <span><strong>{{ r.username }}</strong></span>
+      <span>{{ r.timestamp }}</span>
+      <span>Time: {{ (r.total_time_seconds / 60) | round(1) }} min</span>
+    </div>
+  </div>
+
+  <!-- Overall score -->
+  <div class="score-card">
+    <div class="score-circle" id="scoreCircle">
+      <span class="score-number">{{ (r.accuracy * 100) | round(1) }}%</span>
+    </div>
+    <div class="score-detail">
+      <p><strong>{{ r.correct_count }}</strong> / {{ r.total_questions }} correct</p>
+      <a href="{{ url_for('result_download') }}" class="btn btn-outline">Download JSON</a>
+    </div>
+  </div>
+
+  <!-- Tab navigation -->
+  <div class="tab-nav">
+    <button class="tab-btn active" data-tab="category">By Category</button>
+    <button class="tab-btn" data-tab="task">By Task</button>
+    <button class="tab-btn" data-tab="subtask">By Subtask</button>
+    <button class="tab-btn" data-tab="capability">By Capability</button>
+    <button class="tab-btn" data-tab="review">Question Review</button>
+  </div>
+
+  <!-- Tab: Category -->
+  <div class="tab-content active" id="tab-category">
+    <div class="chart-wrapper">
+      <canvas id="chartCategory"></canvas>
+    </div>
+    <table class="stats-table">
+      <thead><tr><th>Category</th><th>Correct</th><th>Total</th><th>Accuracy</th></tr></thead>
+      <tbody>
+        {% for name, s in r.by_category.items() %}
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ s.correct }}</td>
+          <td>{{ s.total }}</td>
+          <td><span class="acc-badge {{ 'acc-high' if s.accuracy >= 0.8 else ('acc-mid' if s.accuracy >= 0.5 else 'acc-low') }}">{{ (s.accuracy * 100) | round(1) }}%</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tab: Task -->
+  <div class="tab-content" id="tab-task">
+    <div class="chart-wrapper">
+      <canvas id="chartTask"></canvas>
+    </div>
+    <table class="stats-table">
+      <thead><tr><th>Task</th><th>Correct</th><th>Total</th><th>Accuracy</th></tr></thead>
+      <tbody>
+        {% for name, s in r.by_task.items() %}
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ s.correct }}</td>
+          <td>{{ s.total }}</td>
+          <td><span class="acc-badge {{ 'acc-high' if s.accuracy >= 0.8 else ('acc-mid' if s.accuracy >= 0.5 else 'acc-low') }}">{{ (s.accuracy * 100) | round(1) }}%</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tab: Subtask -->
+  <div class="tab-content" id="tab-subtask">
+    <div class="chart-wrapper">
+      <canvas id="chartSubtask"></canvas>
+    </div>
+    <table class="stats-table">
+      <thead><tr><th>Subtask</th><th>Correct</th><th>Total</th><th>Accuracy</th></tr></thead>
+      <tbody>
+        {% for name, s in r.by_subtask.items() %}
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ s.correct }}</td>
+          <td>{{ s.total }}</td>
+          <td><span class="acc-badge {{ 'acc-high' if s.accuracy >= 0.8 else ('acc-mid' if s.accuracy >= 0.5 else 'acc-low') }}">{{ (s.accuracy * 100) | round(1) }}%</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tab: Capability -->
+  <div class="tab-content" id="tab-capability">
+    <div class="chart-wrapper">
+      <canvas id="chartCapability"></canvas>
+    </div>
+    <table class="stats-table">
+      <thead><tr><th>Capability</th><th>Correct</th><th>Total</th><th>Accuracy</th></tr></thead>
+      <tbody>
+        {% for name, s in r.by_capability.items() %}
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ s.correct }}</td>
+          <td>{{ s.total }}</td>
+          <td><span class="acc-badge {{ 'acc-high' if s.accuracy >= 0.8 else ('acc-mid' if s.accuracy >= 0.5 else 'acc-low') }}">{{ (s.accuracy * 100) | round(1) }}%</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tab: Review -->
+  <div class="tab-content" id="tab-review">
+    <!-- Filter -->
+    <div class="review-filters">
+      <button class="filter-btn active" data-filter="all">All ({{ r.total_questions }})</button>
+      <button class="filter-btn" data-filter="correct">✅ Correct ({{ r.correct_count }})</button>
+      <button class="filter-btn" data-filter="wrong">❌ Wrong ({{ r.total_questions - r.correct_count }})</button>
+    </div>
+
+    <div class="review-list" id="reviewList">
+      {% for d in r.details %}
+      <div class="review-item {{ 'review-correct' if d.is_correct else 'review-wrong' }}" data-correct="{{ 'yes' if d.is_correct else 'no' }}">
+        <div class="review-header">
+          <span class="review-num">#{{ d.position + 1 }}</span>
+          <span class="review-badge {{ 'badge-correct' if d.is_correct else 'badge-wrong' }}">
+            {{ '✅ Correct' if d.is_correct else '❌ Wrong' }}
+          </span>
+          <span class="review-category">{{ d.category }}</span>
+          <span class="review-time">{{ d.time_spent }}s</span>
+        </div>
+
+        <!-- Images in review -->
+        {% if d.image_path %}
+        <div class="review-images">
+          <img src="/{{ d.image_path }}" alt="Question image" class="review-img" onclick="openLightbox(this.src)">
+        </div>
+        {% elif d.images and not d.option_images and not d.reference_images %}
+        {# Only show images here if they're not option_images (to avoid timestep info) and not reference_images (to avoid duplication) #}
+        <div class="review-images review-images-multi">
+          {% for img in d.images %}
+          <img src="/{{ img }}" alt="Image {{ loop.index0 }}" class="review-img" onclick="openLightbox(this.src)">
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if d.bev_image %}
+        <div class="review-images">
+          <span class="image-label">BEV</span>
+          <img src="/{{ d.bev_image }}" alt="BEV image" class="review-img" onclick="openLightbox(this.src)">
+        </div>
+        {% endif %}
+        {% if d.view_image %}
+        <div class="review-images">
+          <span class="image-label">Directional View</span>
+          <img src="/{{ d.view_image }}" alt="View image" class="review-img" onclick="openLightbox(this.src)">
+        </div>
+        {% endif %}
+        {% if d.reference_images %}
+        <div class="review-images review-images-multi">
+          <span class="image-label" style="width:100%">Reference Images</span>
+          {% for img in d.reference_images %}
+          <img src="/{{ img }}" alt="Ref {{ loop.index }}" class="review-img" onclick="openLightbox(this.src)">
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <p class="review-question">{{ d.question | replace('\n', '<br>') | safe }}</p>
+
+        <div class="review-options {% if d.option_images %}review-options-with-images{% endif %}">
+          {% if d.option_images %}
+            {# For temporal/visual comparison tasks - show images instead of text #}
+            {% for key, value in d.options.items() %}
+            {% set img_index = loop.index0 %}
+            <div class="review-option review-option-with-image
+              {{ 'option-user-selected' if key == d.user_answer else '' }}
+              {{ 'option-correct-answer' if key == d.correct_answer else '' }}
+            ">
+              <div class="review-option-header">
+                <span class="option-key">{{ key }}</span>
+                {% if key == d.correct_answer %}<span class="option-tag tag-correct">✓ Correct</span>{% endif %}
+                {% if key == d.user_answer and not d.is_correct %}<span class="option-tag tag-wrong">✗ Your answer</span>{% endif %}
+              </div>
+              <div class="review-option-image">
+                <img src="/{{ d.option_images[img_index] }}" alt="Option {{ key }}" class="review-img" onclick="openLightbox(this.src)">
+              </div>
+            </div>
+            {% endfor %}
+          {% else %}
+            {# Regular text options #}
+            {% for key, value in d.options.items() %}
+            <div class="review-option
+              {{ 'option-user-selected' if key == d.user_answer else '' }}
+              {{ 'option-correct-answer' if key == d.correct_answer else '' }}
+            ">
+              <span class="option-key">{{ key }}</span> {{ value }}
+              {% if key == d.correct_answer %}<span class="option-tag tag-correct">✓ Correct</span>{% endif %}
+              {% if key == d.user_answer and not d.is_correct %}<span class="option-tag tag-wrong">✗ Your answer</span>{% endif %}
+            </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+
+        {% if d.explanation %}
+        <details class="review-explanation">
+          <summary>View Explanation</summary>
+          <p>{{ d.explanation }}</p>
+        </details>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="Enlarged image">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script>
+  // Chart data from server
+  const chartData = {
+    category: {
+      labels: {{ r.by_category.keys() | list | tojson }},
+      correct: {{ r.by_category.values() | map(attribute='correct') | list | tojson }},
+      total: {{ r.by_category.values() | map(attribute='total') | list | tojson }},
+    },
+    task: {
+      labels: {{ r.by_task.keys() | list | tojson }},
+      correct: {{ r.by_task.values() | map(attribute='correct') | list | tojson }},
+      total: {{ r.by_task.values() | map(attribute='total') | list | tojson }},
+    },
+    subtask: {
+      labels: {{ r.by_subtask.keys() | list | tojson }},
+      correct: {{ r.by_subtask.values() | map(attribute='correct') | list | tojson }},
+      total: {{ r.by_subtask.values() | map(attribute='total') | list | tojson }},
+    },
+    capability: {
+      labels: {{ r.by_capability.keys() | list | tojson }},
+      correct: {{ r.by_capability.values() | map(attribute='correct') | list | tojson }},
+      total: {{ r.by_capability.values() | map(attribute='total') | list | tojson }},
+    },
+  };
+
+  initResultPage(chartData);
+</script>
+{% endblock %}
+

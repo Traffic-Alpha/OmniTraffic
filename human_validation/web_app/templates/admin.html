@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+{% block title %}Test Records{% endblock %}
+
+{% block content %}
+<div class="admin-container">
+  <h1>Test Records</h1>
+  
+  <!-- Aggregate Statistics -->
+  {% if agg_stats and agg_stats.total_tests > 0 %}
+  <div class="aggregate-stats-section">
+    <h2>📊 Aggregate Statistics (All {{ agg_stats.total_tests }} Test Takers)</h2>
+    
+    <!-- Overall Summary -->
+    <div class="agg-summary-card">
+      <div class="agg-summary-item">
+        <span class="agg-label">Total Tests</span>
+        <span class="agg-value">{{ agg_stats.total_tests }}</span>
+      </div>
+      <div class="agg-summary-item">
+        <span class="agg-label">Total Questions</span>
+        <span class="agg-value">{{ agg_stats.total_questions }}</span>
+      </div>
+      <div class="agg-summary-item">
+        <span class="agg-label">Total Correct</span>
+        <span class="agg-value">{{ agg_stats.total_correct }}</span>
+      </div>
+      <div class="agg-summary-item">
+        <span class="agg-label">Overall Accuracy</span>
+        <span class="agg-value-large">
+          <span class="acc-badge {{ 'acc-high' if agg_stats.accuracy >= 0.8 else ('acc-mid' if agg_stats.accuracy >= 0.5 else 'acc-low') }}">
+            {{ (agg_stats.accuracy * 100) | round(1) }}%
+          </span>
+        </span>
+      </div>
+    </div>
+    
+    <!-- Detailed Statistics Tabs -->
+    <div class="agg-details">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="agg-category">By Category</button>
+        <button class="tab-btn" data-tab="agg-task">By Task</button>
+        <button class="tab-btn" data-tab="agg-subtask">By Subtask</button>
+        <button class="tab-btn" data-tab="agg-capability">By Capability</button>
+      </div>
+      
+      <!-- By Category -->
+      <div class="tab-content active" id="tab-agg-category">
+        <table class="stats-table">
+          <thead><tr><th>Category</th><th>Correct</th><th>Incorrect</th><th>Total</th><th>Accuracy</th></tr></thead>
+          <tbody>
+            {% for name, stats in agg_stats.by_category.items() | sort %}
+            <tr>
+              <td>{{ name }}</td>
+              <td>{{ stats.correct }}</td>
+              <td>{{ stats.total - stats.correct }}</td>
+              <td>{{ stats.total }}</td>
+              <td><span class="acc-badge {{ 'acc-high' if stats.accuracy >= 0.8 else ('acc-mid' if stats.accuracy >= 0.5 else 'acc-low') }}">{{ (stats.accuracy * 100) | round(1) }}%</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="chart-container">
+          <canvas id="aggChartCategory"></canvas>
+        </div>
+      </div>
+      
+      <!-- By Task -->
+      <div class="tab-content" id="tab-agg-task">
+        <table class="stats-table">
+          <thead><tr><th>Task</th><th>Correct</th><th>Incorrect</th><th>Total</th><th>Accuracy</th></tr></thead>
+          <tbody>
+            {% for name, stats in agg_stats.by_task.items() | sort %}
+            <tr>
+              <td>{{ name }}</td>
+              <td>{{ stats.correct }}</td>
+              <td>{{ stats.total - stats.correct }}</td>
+              <td>{{ stats.total }}</td>
+              <td><span class="acc-badge {{ 'acc-high' if stats.accuracy >= 0.8 else ('acc-mid' if stats.accuracy >= 0.5 else 'acc-low') }}">{{ (stats.accuracy * 100) | round(1) }}%</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="chart-container">
+          <canvas id="aggChartTask"></canvas>
+        </div>
+      </div>
+      
+      <!-- By Subtask -->
+      <div class="tab-content" id="tab-agg-subtask">
+        <table class="stats-table">
+          <thead><tr><th>Subtask</th><th>Correct</th><th>Incorrect</th><th>Total</th><th>Accuracy</th></tr></thead>
+          <tbody>
+            {% for name, stats in agg_stats.by_subtask.items() | sort %}
+            <tr>
+              <td>{{ name }}</td>
+              <td>{{ stats.correct }}</td>
+              <td>{{ stats.total - stats.correct }}</td>
+              <td>{{ stats.total }}</td>
+              <td><span class="acc-badge {{ 'acc-high' if stats.accuracy >= 0.8 else ('acc-mid' if stats.accuracy >= 0.5 else 'acc-low') }}">{{ (stats.accuracy * 100) | round(1) }}%</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="chart-container">
+          <canvas id="aggChartSubtask"></canvas>
+        </div>
+      </div>
+      
+      <!-- By Capability -->
+      <div class="tab-content" id="tab-agg-capability">
+        <table class="stats-table">
+          <thead><tr><th>Capability</th><th>Correct</th><th>Incorrect</th><th>Total</th><th>Accuracy</th></tr></thead>
+          <tbody>
+            {% for name, stats in agg_stats.by_capability.items() | sort %}
+            <tr>
+              <td>{{ name }}</td>
+              <td>{{ stats.correct }}</td>
+              <td>{{ stats.total - stats.correct }}</td>
+              <td>{{ stats.total }}</td>
+              <td><span class="acc-badge {{ 'acc-high' if stats.accuracy >= 0.8 else ('acc-mid' if stats.accuracy >= 0.5 else 'acc-low') }}">{{ (stats.accuracy * 100) | round(1) }}%</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="chart-container">
+          <canvas id="aggChartCapability"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  
+  <!-- Individual Test Records -->
+  <h2 style="margin-top: 40px;">Individual Test Records</h2>
+  {% if records %}
+  <table class="stats-table">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Time</th>
+        <th>Correct</th>
+        <th>Total</th>
+        <th>Accuracy</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for rec in records %}
+      <tr>
+        <td>{{ rec.username }}</td>
+        <td>{{ rec.timestamp }}</td>
+        <td>{{ rec.correct }}</td>
+        <td>{{ rec.total }}</td>
+        <td>
+          <span class="acc-badge {{ 'acc-high' if rec.accuracy >= 0.8 else ('acc-mid' if rec.accuracy >= 0.5 else 'acc-low') }}">
+            {{ (rec.accuracy * 100) | round(1) }}%
+          </span>
+        </td>
+        <td><a href="{{ url_for('admin_result_detail', filename=rec.filename) }}" class="btn btn-sm">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="empty-message">No test records yet. Be the first to take the test!</p>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% if agg_stats %}
+<script>
+// Prepare data for aggregate charts
+const aggChartData = {
+  category: {
+    labels: {{ agg_stats.by_category.keys() | list | tojson }},
+    correct: {{ agg_stats.by_category.values() | map(attribute='correct') | list | tojson }},
+    total: {{ agg_stats.by_category.values() | map(attribute='total') | list | tojson }}
+  },
+  task: {
+    labels: {{ agg_stats.by_task.keys() | list | tojson }},
+    correct: {{ agg_stats.by_task.values() | map(attribute='correct') | list | tojson }},
+    total: {{ agg_stats.by_task.values() | map(attribute='total') | list | tojson }}
+  },
+  subtask: {
+    labels: {{ agg_stats.by_subtask.keys() | list | tojson }},
+    correct: {{ agg_stats.by_subtask.values() | map(attribute='correct') | list | tojson }},
+    total: {{ agg_stats.by_subtask.values() | map(attribute='total') | list | tojson }}
+  },
+  capability: {
+    labels: {{ agg_stats.by_capability.keys() | list | tojson }},
+    correct: {{ agg_stats.by_capability.values() | map(attribute='correct') | list | tojson }},
+    total: {{ agg_stats.by_capability.values() | map(attribute='total') | list | tojson }}
+  }
+};
+
+// Initialize aggregate charts
+function initAggregateCharts() {
+  const chartConfigs = [
+    { id: "aggChartCategory", data: aggChartData.category },
+    { id: "aggChartTask", data: aggChartData.task },
+    { id: "aggChartSubtask", data: aggChartData.subtask },
+    { id: "aggChartCapability", data: aggChartData.capability }
+  ];
+
+  chartConfigs.forEach(({ id, data }) => {
+    const canvas = document.getElementById(id);
+    if (!canvas || !data) return;
+
+    const incorrect = data.total.map((t, i) => t - data.correct[i]);
+    const accuracy = data.total.map((t, i) =>
+      t > 0 ? Math.round((data.correct[i] / t) * 1000) / 10 : 0
+    );
+
+    new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: data.labels,
+        datasets: [
+          {
+            label: "Correct",
+            data: data.correct,
+            backgroundColor: "rgba(37, 99, 235, 0.7)",
+            borderRadius: 4,
+          },
+          {
+            label: "Incorrect",
+            data: incorrect,
+            backgroundColor: "rgba(220, 38, 38, 0.5)",
+            borderRadius: 4,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 2,
+        plugins: {
+          legend: { position: "top" },
+          tooltip: {
+            callbacks: {
+              afterBody: (ctx) => {
+                const idx = ctx[0].dataIndex;
+                return `Accuracy: ${accuracy[idx]}%`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true, ticks: { stepSize: 1 } },
+        },
+      },
+    });
+  });
+}
+
+// Initialize charts when page loads
+document.addEventListener('DOMContentLoaded', initAggregateCharts);
+</script>
+{% endif %}
+{% endblock %}
+
