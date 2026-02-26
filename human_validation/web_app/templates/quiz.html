@@ -36,6 +36,11 @@
       <span class="timer" id="timer">0:00</span>
     </div>
 
+  <!-- Question text -->
+  <div class="question-text">
+    <p>{{ question.question | replace('\n', '<br>') | safe }}</p>
+  </div>
+
   <!-- Images -->
   <div class="image-section">
     {% if image_mode == "single" %}
@@ -94,11 +99,6 @@
     {% endif %}
   </div>
 
-  <!-- Question text -->
-  <div class="question-text">
-    <p>{{ question.question | replace('\n', '<br>') | safe }}</p>
-  </div>
-
   <!-- Options -->
   <form action="{{ url_for('submit') }}" method="POST" id="quizForm">
     <input type="hidden" name="q_pos" value="{{ q_pos }}">
@@ -107,7 +107,12 @@
     <input type="hidden" name="action" id="actionInput" value="next">
     <input type="hidden" name="target_pos" id="targetPosInput" value="">
 
-    <div class="options-list {% if question.option_images %}options-with-images{% endif %}">
+    <div class="options-header">
+      <span class="options-prompt">选择正确的答案点击</span>
+    </div>
+
+    {% set option_count = question.options.items() | list | length %}
+    <div class="options-list {% if question.option_images %}options-with-images{% endif %} {% if question.option_images and option_count == 4 %}options-grid-2x2{% endif %}">
       {% if question.option_images %}
         {# For temporal/visual comparison tasks - show images instead of text to prevent timestep cheating #}
         {% for key, value in question.options.items() %}

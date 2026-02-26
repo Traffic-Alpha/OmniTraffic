@@ -254,11 +254,37 @@ a:hover { text-decoration: underline; }
 }
 .option-item.selected .option-key { background: var(--primary); color: #fff; }
 
+/* Options header with prompt */
+.options-header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.options-prompt {
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, var(--primary) 0%, #2563eb 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
 /* Options with images (for temporal/visual comparison tasks) */
 .options-with-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
+}
+
+/* 2x2 grid layout for 4 image options */
+.options-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .option-with-image {
@@ -858,7 +884,12 @@ a:hover { text-decoration: underline; }
   .options-with-images {
     grid-template-columns: 1fr;
   }
-  
+
+  .options-grid-2x2 {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
   .review-options-with-images {
     grid-template-columns: 1fr;
   }
