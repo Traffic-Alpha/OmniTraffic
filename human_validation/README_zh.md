@@ -2,11 +2,11 @@
  * @Author: WANG Maonan, Zhengyan Huang
  * @Date: 2026-02-26 15:54:22
  * @Description: README
- * @LastEditTime: 2026-02-26 16:23:05
+ * @LastEditTime: 2026-02-26 16:27:12
 -->
 # OmniTraffic 人工验证
 
-这是 [OmniTraffic](https://github.com/your-repo/OmniTraffic) 项目中的人工验证部分——一个全面的交通场景视觉问答基准。我们从数据集中精心挑选了 **100 道题目**，涵盖**仿真环境**和**真实环境**，用于评估人类在交通场景理解任务上的表现（[English Version](README.md)）。
+这是 [OmniTraffic](https://github.com/Traffic-Alpha/OmniTraffic/tree/main) 项目中的人工验证部分——一个全面的交通场景视觉问答基准。我们从数据集中精心挑选了 **100 道题目**，涵盖**仿真环境**和**真实环境**，用于评估人类在交通场景理解任务上的表现（[English Version](README.md)）。
 
 <div align=center>
    <img src="./assets/quiz_interface.png" width="70%" >

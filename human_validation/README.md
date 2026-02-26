@@ -2,11 +2,11 @@
  * @Author: WANG Maonan, HUANG Zhengyan
  * @Date: 2026-02-26 15:54:04
  * @Description: README
- * @LastEditTime: 2026-02-26 16:21:17
+ * @LastEditTime: 2026-02-26 16:27:00
 -->
 # OmniTraffic Human Validation
 
-This is the **human validation** component of [OmniTraffic](https://github.com/your-repo/OmniTraffic), a comprehensive benchmark for traffic scene visual question answering. We have carefully selected **100 questions** from the dataset, covering both **synthetic (simulation)** and **real-world** environments, to evaluate human performance on traffic scene understanding tasks ([中文版](README_zh.md)).
+This is the **human validation** component of [OmniTraffic](https://github.com/Traffic-Alpha/OmniTraffic/tree/main), a comprehensive benchmark for traffic scene visual question answering. We have carefully selected **100 questions** from the dataset, covering both **synthetic (simulation)** and **real-world** environments, to evaluate human performance on traffic scene understanding tasks ([中文版](README_zh.md)).
 
 <div align=center>
    <img src="./assets/quiz_interface.png" width="70%" >
