@@ -1,5 +1,8 @@
 # Custom
+TransSimHub/
 human_validation/data/images/
+*.pth
+*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
