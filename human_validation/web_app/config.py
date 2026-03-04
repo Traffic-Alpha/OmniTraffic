@@ -2,7 +2,7 @@
 Author: Zhengyan Huang, WANG Maonan
 Date: 2026-02-26 15:15:29
 Description: Configuration for OmniTraffic VQA Web Test
-LastEditTime: 2026-02-26 15:40:13
+LastEditTime: 2026-02-27 11:10:08
 '''
 import os
 

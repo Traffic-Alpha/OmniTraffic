@@ -1,9 +1,9 @@
 '''
 Author: WANG Maonan
 Date: 2025-06-25 18:21:04
-LastEditors: WANG Maonan
+LastEditors: Please set LastEditors
 Description: Render Junction Scenarios
-LastEditTime: 2025-09-28 16:41:06
+LastEditTime: 2026-03-04 12:12:06
 '''
 import os
 import sys
@@ -25,6 +25,8 @@ def parse_args():
     parser.add_argument("--start", type=int, default=266, help="起始时间步")
     parser.add_argument("--end", type=int, default=266, help="结束时间步")
     parser.add_argument("--models", type=str, default="high_poly", choices=["high_poly", "low_poly"], help="车辆模型精度")
+    parser.add_argument("--render_mask", action="store_true", help="是否渲染mask (默认: False)")
+    parser.add_argument("--render_depth", action="store_true", help="是否渲染depth (默认: False)")
     
     return parser.parse_args(args)
 
@@ -39,7 +41,7 @@ def main():
     )
     # 添加tshub到系统路径
     sys.path.insert(0, os.path.join(args.tshub, "tshub/tshub_env3d/"))
-    
+    print(os.path.join(args.tshub, "tshub/tshub_env3d/"))
     # 动态导入（确保路径设置后再导入）
     from vis3d_blender_render import TimestepRenderer, VehicleManager
 
@@ -48,8 +50,8 @@ def main():
         vehicle_mgr = VehicleManager(models_base_path) # 加载特定的车辆模型
         renderer = TimestepRenderer(
             resolution=args.resolution,
-            render_mask=False, 
-            render_depth=False
+            render_mask=args.render_mask, 
+            render_depth=args.render_depth
         ) # 渲染场景的每一个时刻
 
         # 初始化计时变量
