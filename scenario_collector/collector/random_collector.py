@@ -77,8 +77,8 @@ def main(cfg: DictConfig):
     net_file = path_convert(f"../../traffic_scenarios/{SCENARIO_NAME}/{NETFILE}")
     scenario_glb_dir = path_convert(f"../../traffic_scenarios/{SCENARIO_NAME}/3d_assets/")
     # 输出文件夹
-    base_path = base_path = path_convert(f"../../exp_dataset/{SCENARIO_IDX}/") # 存储路径
-    trip_info = path_convert(f"../../exp_dataset/{SCENARIO_IDX}/tripinfo_random.out.xml")
+    base_path = base_path = path_convert(f"../../scenario_dataset/{SCENARIO_IDX}/") # 存储路径
+    trip_info = path_convert(f"../../scenario_dataset/{SCENARIO_IDX}/tripinfo_random.out.xml")
     
     # Init Env
     tsc_env = make_env(

@@ -89,8 +89,8 @@ def main(cfg: DictConfig):
     sumo_cfg = path_convert(f"../../traffic_scenarios/{SCENARIO_NAME}/{SUMOCFG}")
     net_file = path_convert(f"../../traffic_scenarios/{SCENARIO_NAME}/{NETFILE}")
     scenario_glb_dir = path_convert(f"../../traffic_scenarios/{SCENARIO_NAME}/3d_assets/")
-    base_path = base_path = path_convert(f"../../exp_dataset/{SCENARIO_IDX}/") # 存储路径
-    trip_info = path_convert(f"../../exp_dataset/{SCENARIO_IDX}/tripinfo_fix.out.xml")
+    base_path = base_path = path_convert(f"../../scenario_dataset/{SCENARIO_IDX}/") # 存储路径
+    trip_info = path_convert(f"../../scenario_dataset/{SCENARIO_IDX}/tripinfo_fix.out.xml")
 
     # Load Model
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
