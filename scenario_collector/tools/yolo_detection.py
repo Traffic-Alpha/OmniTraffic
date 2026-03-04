@@ -248,4 +248,10 @@ def process_multiple_images(root_dir: List[str],
 
             
 if __name__ == "__main__":
-    process_multiple_images("/home/tshub/Code_Project/2_Traffic/TrafficAlpha/VLM-TSC/exp_dataset/India_Delhi_easy_high_density")
+    # process_multiple_images("/home/tshub/Code_Project/2_Traffic/TrafficAlpha/VLM-TSC/exp_dataset/India_Delhi_easy_high_density")
+    process_single_image(
+        image_path="/home/wmn/Coding_Project/TrafficAlpha/OmniTraffic/scenario_dataset/Hongkong_YMT_normal_fluctuating_commuter_barrier/400/high_quality_rgb/3.png",
+        model=load_yolo_model('yolo11x.pt'),
+        confidence_threshold=0.25,
+        save_output=True
+    )
