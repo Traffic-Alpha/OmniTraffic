@@ -1,0 +1,14 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--741602126#2.93--741602126#2.93_0--r" lane="741602126#2.93_0" pos="154.23000000000002" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--741602126#2.93--741602126#2.93_1--s" lane="741602126#2.93_1" pos="154.23000000000002" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--741602126#2.93--741602126#2.93_2--l" lane="741602126#2.93_2" pos="154.23000000000002" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--84355055#1--84355055#1_0--r" lane="84355055#1_0" pos="173.65" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--84355055#1--84355055#1_1--s" lane="84355055#1_1" pos="173.65" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--84355055#1--84355055#1_2--l" lane="84355055#1_2" pos="173.65" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--387284606#0.817--387284606#0.817_0--r" lane="387284606#0.817_0" pos="119.27000000000001" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--387284606#0.817--387284606#0.817_1--s" lane="387284606#0.817_1" pos="119.27000000000001" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--387284606#0.817--387284606#0.817_2--l" lane="387284606#0.817_2" pos="119.27000000000001" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--739536522.212--739536522.212_0--r" lane="739536522.212_0" pos="160.37" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--739536522.212--739536522.212_1--s" lane="739536522.212_1" pos="160.37" length="45"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--INT1--739536522.212--739536522.212_2--l" lane="739536522.212_2" pos="160.37" length="45"/>
+</additional>

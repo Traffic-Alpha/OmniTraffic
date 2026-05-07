@@ -1,0 +1,24 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_0--r" lane="315156946#0_0" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_1--s" lane="315156946#0_1" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_2--s" lane="315156946#0_2" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_3--s" lane="315156946#0_3" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_4--l" lane="315156946#0_4" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--315156946#0--315156946#0_5--l" lane="315156946#0_5" pos="203.07000000000002" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--989312046#0--989312046#0_0--r" lane="989312046#0_0" pos="145.56" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--989312046#0--989312046#0_1--s" lane="989312046#0_1" pos="145.56" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--989312046#0--989312046#0_2--s" lane="989312046#0_2" pos="145.56" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--989312046#0--989312046#0_3--s" lane="989312046#0_3" pos="145.56" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--989312046#0--989312046#0_4--l" lane="989312046#0_4" pos="145.56" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--E1--E1_0--r" lane="E1_0" pos="229.59" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--E1--E1_1--s" lane="E1_1" pos="229.59" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--E1--E1_2--s" lane="E1_2" pos="229.59" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--E1--E1_3--s" lane="E1_3" pos="229.59" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--E1--E1_4--l" lane="E1_4" pos="229.59" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_0--r" lane="525074961#6_0" pos="59.87" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_1--s" lane="525074961#6_1" pos="59.87" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_2--s" lane="525074961#6_2" pos="59.87" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_3--s" lane="525074961#6_3" pos="59.87" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_4--s" lane="525074961#6_4" pos="59.87" length="70"/>
+    <laneAreaDetector file="e2.output.xml" freq="60" friendlyPos="x" id="e2det--J2--525074961#6--525074961#6_5--l" lane="525074961#6_5" pos="59.87" length="70"/>
+</additional>

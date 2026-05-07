@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-24 10:47:56 by Eclipse SUMO polyconvert Version 1.22.0
+<polyconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/polyconvertConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/china/桌面/tscvla/sim_envs/Beijing_Pinganli/env/map.net.xml"/>
+        <osm-files value="/home/china/桌面/tscvla/sim_envs/Beijing_Pinganli/map.osm"/>
+        <osm.merge-relations value="1"/>
+        <type-file value="/home/china/桌面/TransSimHub/tshub/sumo_tools/./osm_build_type/poly.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/china/桌面/tscvla/sim_envs/Beijing_Pinganli/env/map.poly.xml"/>
+    </output>
+
+    <building_defaults>
+        <discard value="true"/>
+    </building_defaults>
+
+</polyconvertConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <location netOffset="-444457.39,-4419364.78" convBoundary="-7253.61,-922.91,20816.84,9517.74" origBoundary="116.264254,39.914343,116.593632,40.007803" projParameter="+proj=utm +zone=50 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <poly id="1243592806" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1466.899659,926.344127 1558.339542,931.035252 1559.030750,917.622085 1524.060096,915.827365 1525.308247,891.776865 1520.863202,891.553058 1521.193494,885.101870 1535.349401,885.834087 1536.086892,871.721317 1528.735456,871.351591 1528.953935,867.209906 1513.695253,866.418916 1513.349449,873.092204 1505.604720,872.691988 1504.875201,886.715909 1508.072253,886.881951 1507.139153,904.736665 1496.214501,904.170296 1496.785799,893.144378 1483.176996,892.441654 1482.627498,902.923540 1485.191923,903.049659 1484.583112,914.808416 1467.537977,913.930285 1466.899659,926.344127"/>
+    <poly id="1243626723" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1458.269117,902.241563 1468.627309,902.456708 1468.772689,895.240958 1458.414487,895.025814 1458.269117,902.241563"/>
+    <poly id="1243626724" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1459.462214,912.633398 1471.178285,912.739021 1471.256851,904.535884 1459.540767,904.430261 1459.462214,912.633398"/>
+    <poly id="1243626725" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1461.079023,892.398521 1481.359889,892.865218 1481.516815,886.071171 1461.236010,885.615572 1461.079023,892.398521"/>
+    <poly id="1243626726" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1528.591919,912.620794 1535.662363,913.136803 1537.393848,889.759956 1530.323303,889.232847 1528.591919,912.620794"/>
+    <poly id="1243626731" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1475.547283,913.085434 1483.427193,913.273769 1483.566825,907.656398 1475.686909,907.468063 1475.547283,913.085434"/>
+    <poly id="1243972568" type="amenity" color="237,199,199" fill="1" layer="-1.00" shape="1232.837538,906.607255 1335.656187,907.163357 1332.651622,812.649673 1232.685654,812.073276 1232.837538,906.607255"/>
+    <poly id="1293687168" type="tourism" color="207,245,201" fill="1" layer="-2.00" shape="1355.969101,1003.551988 1355.658088,980.222897 1418.477947,983.395296 1417.839141,1036.666669 1399.648399,1036.873482 1400.137993,1003.526894 1355.969101,1003.551988"/>
+    <poly id="200325772" type="building" color="255,230,230" fill="1" layer="-1.00" shape="1092.539337,961.018734 1371.885269,977.843312 1373.085979,958.010950 1093.747870,941.186260 1092.539337,961.018734"/>
+    <poi id="11559050677" type="natural" color="140,196,107" layer="1.00" x="1511.34" y="934.49"/>
+    <poi id="11559050678" type="natural" color="140,196,107" layer="1.00" x="1500.98" y="933.91"/>
+    <poi id="11559050679" type="natural" color="140,196,107" layer="1.00" x="1493.45" y="933.64"/>
+    <poi id="11559050680" type="natural" color="140,196,107" layer="1.00" x="1486.14" y="933.80"/>
+    <poi id="11559050681" type="natural" color="140,196,107" layer="1.00" x="1473.28" y="933.56"/>
+    <poi id="11559050682" type="natural" color="140,196,107" layer="1.00" x="1468.79" y="930.55"/>
+    <poi id="11559050683" type="natural" color="140,196,107" layer="1.00" x="1464.45" y="917.98"/>
+    <poi id="11559050684" type="natural" color="140,196,107" layer="1.00" x="1461.16" y="916.27"/>
+    <poi id="11559050685" type="natural" color="140,196,107" layer="1.00" x="1461.89" y="925.71"/>
+    <poi id="11559050711" type="natural" color="140,196,107" layer="1.00" x="1504.98" y="898.48"/>
+</additional>
