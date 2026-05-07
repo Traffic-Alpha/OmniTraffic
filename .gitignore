@@ -1,8 +1,23 @@
 # Custom
 TransSimHub/
+transsimhub/
 human_validation/data/images/
 *.pth
 *.pt
+
+# OmniTraffic datasets (download from HuggingFace)
+scenario_dataset/
+vqa_benchmark/
+
+# Traffic scenario files (download Blender env from GitHub Releases)
+traffic_scenarios/*/
+!traffic_scenarios/_config/
+
+# Collector outputs
+scenario_collector/collector/outputs/
+
+# Human validation results
+human_validation/web_app/results/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

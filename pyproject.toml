@@ -6,4 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "flask>=3.1.3",
+    "gymnasium>=1.2.3",
+    "hydra-core>=1.3.2",
+    "imath>=0.0.2",
+    "matplotlib>=3.10.8",
+    "opencv-python>=4.13.0.92",
+    "openexr>=3.4.6",
+    "osmnx>=2.1.0",
+    "ultralytics>=8.4.19",
 ]
