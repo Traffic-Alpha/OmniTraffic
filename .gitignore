@@ -7,12 +7,15 @@ human_validation/data/images/
 
 # OmniTraffic datasets (download from HuggingFace)
 scenario_dataset/
-vqa_benchmark/
 
 # Traffic scenario files
 # Blender environment files (download from GitHub Releases)
 traffic_scenarios/**/*.blend
 traffic_scenarios/**/*.blend1
+
+# Large image files
+*.tif
+*.tiff
 
 # Collector outputs
 scenario_collector/collector/outputs/

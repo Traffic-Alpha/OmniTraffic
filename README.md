@@ -192,7 +192,7 @@ OmniTraffic/
 ├── scenario_dataset/             # Collected data
 │   ├── simulation/              # Raw simulation data
 │   └── real_world/              # Real-world data
-├── vqa_benchmark/               # VQA generation pipeline
+├── vqa_generate_pipeline/               # VQA generation pipeline
 ├── human_validation/            # Human evaluation web app
 │   └── web_app/                 # Flask web application
 ├── TransSimHub/                 # Core simulation engine
@@ -214,7 +214,7 @@ uv sync
 
 Download pre-processed datasets from HuggingFace (ready to use directly):
 - [OmniTraffic_Dataset](https://huggingface.co/datasets/CROHuang/Omnitraffic_Dataset) → `scenario_dataset/`
-- [OmniTraffic_Benchmark](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) → `vqa_benchmark/`
+- [OmniTraffic_Benchmark](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) → `vqa_generate_pipeline/`
 
 Only download Blender environment files from [GitHub Releases](https://github.com/Traffic-Alpha/OmniTraffic/releases) if you want to customize rendering.
 
@@ -228,7 +228,7 @@ MAP=<intersection> SCENE=<scenario_type> python scenario_collector/collector/<st
 
 ### 4. Generate VQA
 
-See `vqa_benchmark/` for VQA generation pipeline.
+See `vqa_generate_pipeline/` for VQA generation pipeline.
 
 ---
 

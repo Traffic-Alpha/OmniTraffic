@@ -192,7 +192,7 @@ OmniTraffic/
 ├── scenario_dataset/             # 采集的数据
 │   ├── simulation/              # 原始仿真数据
 │   └── real_world/              # 真实世界数据
-├── vqa_benchmark/               # VQA 生成 pipeline
+├── vqa_generate_pipeline/               # VQA 生成 pipeline
 ├── human_validation/            # 人工验证 Web 应用
 │   └── web_app/                 # Flask Web 应用
 ├── TransSimHub/                 # 核心仿真引擎
@@ -214,7 +214,7 @@ uv sync
 
 从 HuggingFace 下载预处理数据集（可直接使用）：
 - [OmniTraffic_Dataset](https://huggingface.co/datasets/CROHuang/Omnitraffic_Dataset) → `scenario_dataset/`
-- [OmniTraffic_Benchmark](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) → `vqa_benchmark/`
+- [OmniTraffic_Benchmark](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) → `vqa_generate_pipeline/`
 
 如需自定义渲染，可从 [GitHub Releases](https://github.com/Traffic-Alpha/OmniTraffic/releases) 下载 Blender 环境文件。
 
@@ -228,7 +228,7 @@ MAP=<交叉口> SCENE=<场景类型> python scenario_collector/collector/<策略
 
 ### 4. 生成 VQA
 
-参见 `vqa_benchmark/` 目录下的 VQA 生成 pipeline。
+参见 `vqa_generate_pipeline/` 目录下的 VQA 生成 pipeline。
 
 ---
 
