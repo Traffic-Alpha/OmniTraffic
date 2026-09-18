@@ -2,10 +2,10 @@
  * @Author: WANG Maonan
  * @Date: 2026-09-18 21:52:56
  * @Description: README for OmniTraffic
- * @LastEditTime: 2026-09-18 22:09:52
+ * @LastEditTime: 2026-09-18 22:12:57
  * @LastEditors: WANG Maonan
 -->
-# OmniTraffic
+# OmniTraffic: A Controllable Generation Pipeline and Benchmark for Spatio-Temporal Traffic Reasoning
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.15749-b31b1b.svg)](https://arxiv.org/abs/2606.15749)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -23,9 +23,7 @@ Official implementation of [OmniTraffic: A Controllable Generation Pipeline and 
 
 ## 🚀 Overview
 
-OmniTraffic is a comprehensive evaluation benchmark designed to test the multi-view spatiotemporal reasoning and Bird's-Eye View (BEV) perception capabilities of multimodal large language models (MLLMs) and autonomous driving systems.
-
-While the complete OmniTraffic dataset ecosystem contains an underlying pool of over 8 million generated VQA samples, this repository specifically hosts the **OmniTraffic Gold-Standard Benchmark**: 3,200 highly-curated VQA pairs systematically sampled from the massive 8M pool and rigorously validated by human experts. They span twelve real-world intersections reconstructed as editable 3D environments, cover both simulated and real-world scenes, and are organized into three task levels — perception, multi-view and temporal reasoning, and decision support.
+OmniTraffic is a controllable generation pipeline and benchmark for spatio-temporal traffic reasoning. A traffic scene asks more of a model than object recognition. It has to read lane topology, multi-view geometry, temporal evolution and signal-phase semantics — and existing traffic benchmarks test little of that. OmniTraffic is built on twelve real-world intersections, reconstructed as editable 3D environments, plus surveillance footage from two countries. So models can be evaluated under controlled and natural conditions alike. Tasks come at three levels: scene perception, multi-view and temporal reasoning, and decision support. The pipeline turns structured traffic metadata into synchronized multi-view VQA samples: 8M in all, with a 3,200-pair test set verified by human experts.
 
 **Evaluating a model?** Download the benchmark and jump to [VQA Benchmark](#-vqa-benchmark). **Generating your own data?** The rest of the repository is the pipeline that produced the 8M pool.
 
@@ -48,7 +46,7 @@ VQA samples               benchmark questions across 3 task levels
 | Resource | Contents | Extract to | Link |
 |----------|----------|-----------|------|
 | OmniTraffic Dataset | Simulation data + rendered images | `scenario_dataset/` | [HuggingFace](https://huggingface.co/datasets/CROHuang/Omnitraffic_Dataset) |
-| OmniTraffic Benchmark | 3,200 gold-standard VQA pairs | `vqa_generate_pipeline/` | [HuggingFace](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) |
+| OmniTraffic Benchmark | 3,200-pair human-verified test set | `vqa_generate_pipeline/` | [HuggingFace](https://huggingface.co/datasets/CROHuang/OmniTraffic_Benchmark) |
 | Blender environment files | 3D traffic environments (`.blend`) | `traffic_scenarios/<MAP>/` | [GitHub Releases](https://github.com/Traffic-Alpha/OmniTraffic/releases) |
 | Human validation images | 100-question study images | `human_validation/data/` | [GitHub Releases](https://github.com/Traffic-Alpha/OmniTraffic/releases/tag/v1.0-human-validation) |
 
@@ -226,7 +224,7 @@ Per timestep and camera view the renderer writes `high_quality_rgb/` (photoreali
 
 ## ❓ VQA Benchmark
 
-From the structured metadata logged by the collector — vehicle states, lane topology, signal phases — OmniTraffic generates synchronized multi-view QA pairs covering lane functions, view-BEV correspondence, temporal dynamics and signal-phase analysis.
+The generator reads the metadata logged by the collector: vehicle states, lane topology, signal phases. From it, it emits synchronized multi-view QA pairs across all three task levels.
 
 | Level | Task | Description |
 |-------|------|-------------|
@@ -234,7 +232,7 @@ From the structured metadata logged by the collector — vehicle states, lane to
 | **2** | Multi-view & Temporal Reasoning | View-BEV correspondence, temporal dynamics tracking |
 | **3** | Decision Support | Topology-grounded reasoning for traffic control decisions |
 
-Answers derive from simulator ground truth rather than hand annotation, so they are exact and generation scales to the 8M+ pool; the released benchmark is the human-validated 3,200-pair subset. To regenerate QA from your own scenarios:
+Answers come from simulator ground truth, not hand annotation. They are exact, and generation scales to the full 8M pool. The released benchmark is the human-verified 3,200-pair subset. To regenerate QA from your own scenarios:
 
 ```bash
 python vqa_generate_pipeline/simulation/generate_vqa.py
