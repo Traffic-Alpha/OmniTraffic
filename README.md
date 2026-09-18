@@ -27,7 +27,7 @@ OmniTraffic is a comprehensive evaluation benchmark designed to test the multi-v
 
 While the complete OmniTraffic dataset ecosystem contains an underlying pool of over 8 million generated VQA samples, this repository specifically hosts the **OmniTraffic Gold-Standard Benchmark**: 3,200 highly-curated VQA pairs systematically sampled from the massive 8M pool and rigorously validated by human experts. They span twelve real-world intersections reconstructed as editable 3D environments, cover both simulated and real-world scenes, and are organized into three task levels — perception, multi-view and temporal reasoning, and decision support.
 
-**Evaluating a model?** Download the benchmark and jump to [VQA Benchmark](#vqa-benchmark). **Generating your own data?** The rest of the repository is the pipeline that produced the 8M pool.
+**Evaluating a model?** Download the benchmark and jump to [VQA Benchmark](#-vqa-benchmark). **Generating your own data?** The rest of the repository is the pipeline that produced the 8M pool.
 
 ### Pipeline
 
@@ -54,7 +54,7 @@ VQA samples               benchmark questions across 3 task levels
 
 ---
 
-## Getting Started
+## ⚡ Getting Started
 
 ### 1. Install
 
@@ -81,7 +81,7 @@ MAP=Hongkong_YMT SCENE=easy_fluctuating_commuter_barrier \
     python scenario_collector/collector/rl_collector.py
 ```
 
-See [Scenario Collector](#scenario-collector) for the strategies and how `SCENE` names are built.
+See [Scenario Collector](#-scenario-collector) for the strategies and how `SCENE` names are built.
 
 ### 4. Render it
 
@@ -105,7 +105,7 @@ Reads `<timestep>/annotations/*.json` under a scenario directory and writes QA p
 
 ---
 
-## Traffic Scenarios
+## 🚦 Traffic Scenarios
 
 ![12 Intersections Overview](./assets/12_intersections.png)
 
@@ -144,7 +144,7 @@ Shared Hydra config in `traffic_scenarios/_config/` layers the environment base,
 
 ---
 
-## Scenario Collector
+## 🎬 Scenario Collector
 
 Runs a signal-control policy over a scenario and logs per-timestep simulation state. Full reference: [`scenario_collector/README.md`](./scenario_collector/README.md).
 
@@ -224,7 +224,7 @@ Per timestep and camera view the renderer writes `high_quality_rgb/` (photoreali
 
 ---
 
-## VQA Benchmark
+## ❓ VQA Benchmark
 
 From the structured metadata logged by the collector — vehicle states, lane topology, signal phases — OmniTraffic generates synchronized multi-view QA pairs covering lane functions, view-BEV correspondence, temporal dynamics and signal-phase analysis.
 
@@ -242,7 +242,7 @@ python vqa_generate_pipeline/simulation/generate_vqa.py
 
 ---
 
-## Human Validation
+## 👥 Human Validation
 
 A Flask web app measuring **human** performance on 100 questions sampled from the benchmark, across synthetic and real-world images — the reference point model scores are read against.
 
@@ -254,7 +254,7 @@ Data download and scoring details: [`human_validation/README.md`](./human_valida
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```
 OmniTraffic/
@@ -279,7 +279,7 @@ OmniTraffic/
 
 ---
 
-## Citation
+## 📖 Citation
 
 If you use OmniTraffic in your research, please cite:
 
@@ -292,6 +292,15 @@ If you use OmniTraffic in your research, please cite:
 }
 ```
 
-## License
+## 🙏 Acknowledgements
 
-Released under the [Apache 2.0](./LICENSE) license.
+We thank our collaborators from SenseTime and Shanghai AI Lab (in alphabetical order):
+- Yuheng Kan (阚宇衡)
+- Zian Ma (马子安) 
+- Chengcheng Xu (徐承成) 
+
+for their contributions to the [TransSimHub](https://github.com/Traffic-Alpha/TransSimHub) simulator development.
+
+## 📫 Contact
+
+If you have any questions, please open an issue in this repository. We will respond as soon as possible.
