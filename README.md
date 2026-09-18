@@ -2,7 +2,7 @@
  * @Author: WANG Maonan
  * @Date: 2026-09-18 21:52:56
  * @Description: README for OmniTraffic
- * @LastEditTime: 2026-09-18 22:06:36
+ * @LastEditTime: 2026-09-18 22:09:52
  * @LastEditors: WANG Maonan
 -->
 # OmniTraffic
@@ -14,7 +14,7 @@
 
 ![OmniTraffic Introduction](./assets/teaser.png)
 
-Official implementation of [OmniTraffic: A Large-scale Multi-view Spatiotemporal Benchmark for Traffic Understanding](https://arxiv.org/abs/2606.15749).
+Official implementation of [OmniTraffic: A Controllable Generation Pipeline and Benchmark for Spatio-Temporal Traffic Reasoning](https://arxiv.org/abs/2606.15749).
 
 ## 📌 News
 
@@ -284,8 +284,9 @@ OmniTraffic/
 If you use OmniTraffic in your research, please cite:
 
 ```bibtex
-@article{omnitraffic2026,
-  title={OmniTraffic: A Large-scale Multi-view Spatiotemporal Benchmark for Traffic Understanding},
+@article{wang2026omnitraffic,
+  title={OmniTraffic: A Controllable Generation Pipeline and Benchmark for Spatio-Temporal Traffic Reasoning},
+  author={Wang, Maonan and Huang, Zhengyan and Jiang, Kemou and Fu, Yuhang and Zhu, Jiayue and Cai, Yuxin and Zou, Xingchen and Zhang, Qiaosheng and Yu, Yi and Wang, Ding and others},
   journal={arXiv preprint arXiv:2606.15749},
   year={2026}
 }
